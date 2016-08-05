@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OhanaExample' do
+  pod 'Ohana', :path => '../'
+end
+
+target 'OhanaTests' do
+  pod 'Ohana', :path => '../'
+
+  pod 'OCMock', '~> 3.3'
+end

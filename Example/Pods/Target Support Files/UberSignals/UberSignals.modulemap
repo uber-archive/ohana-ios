@@ -1,0 +1,9 @@
+framework module UberSignals {
+  umbrella header "UberSignals-umbrella.h"
+
+  export *
+  module * { export * }
+
+  private header "UBSignal+Internal.h"
+  private header "UBSignalObserver+Internal.h"
+}
