@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/uber/Ohana.git', :tag => s.version.to_s }
   s.requires_arc     = true
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'Ohana/Classes/**/*.{h,m}'
 
   s.frameworks = 'AddressBook', 'Contacts'
 
-  s.dependency 'UberSignals', '~> 2.5'
+  s.dependency 'UberSignals', '~> 2.0'
   s.dependency 'libPhoneNumber-iOS', '~> 0.8'
 end
