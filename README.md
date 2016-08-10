@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/Ohana.svg?style=flat)](http://cocoapods.org/pods/Ohana)
 [![Platform](https://img.shields.io/cocoapods/p/Ohana.svg?style=flat)](http://cocoapods.org/pods/Ohana)
 
-Ohana is a framework for working with contacts on the iOS platform. It provides a component-based architecture for loading and processing contacts, as well as handling contact selection. Whether loading contacts to display to a user, or processing contact data programatically, Ohana provides a simple, but extensible, framework on which to build your app.  Check out the [wiki](https://github.com/uber/ohana-ios/wiki) to learn how the library works.  There are two quickstart guides available: one for [Swift](https://github.com/uber/ohana-ios/wiki/Quick-Start-(Swift)) and one for [Objective-C](https://github.com/uber/ohana-ios/wiki/Quick-Start-(Objective-C)).  If you have any questions, feel free to ask on [Stack Overflow](http://stackoverflow.com/questions/tagged/ohana) (tag "ohana").
+Ohana is a framework for working with a user's contacts on the iOS platform. It provides a component-based architecture for loading and processing contacts, as well as managing state such as contact selection and tagging. Whether loading contacts to display to a user, or processing contact data programatically, Ohana provides a simple, but extensible, framework for contact access in your application.  Check out the [wiki](https://github.com/uber/ohana-ios/wiki) to learn how the library works.  There are two quickstart guides available: one for [Swift](https://github.com/uber/ohana-ios/wiki/Quick-Start-(Swift)) and one for [Objective-C](https://github.com/uber/ohana-ios/wiki/Quick-Start-(Objective-C)).  If you have any questions, feel free to ask on [Stack Overflow](http://stackoverflow.com/questions/tagged/ohana) (tag "ohana").
 
 ## Features
 
@@ -17,7 +17,7 @@ Ohana is a framework for working with contacts on the iOS platform. It provides 
 
 #### CocoaPods
 
-To integrate Ohana into your project using [CocoaPods](http://cocoapods.org), add the following line to your Podfile:
+To integrate Ohana into your project using [CocoaPods](http://cocoapods.org), add the following line to your Podfile and run `pod install`:
 
 ```ruby
 pod 'Ohana', '~> 1.0'
@@ -30,7 +30,7 @@ To run the example app, clone the repo, and run `pod install` from the Example d
 ## Authors
 
 * Nick Entin ([@NickEntin](https://github.com/NickEntin))
-* Maxwell Elliott (maxwelle@uber.com)
+* Maxwell Elliott (maxwelle@uber.com, [@maxwellE](https://github.com/maxwellE))
 * Doug Togno (dtogno@uber.com)
 
 ## Contributions
