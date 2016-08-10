@@ -23,9 +23,13 @@ To integrate Ohana into your project using [CocoaPods](http://cocoapods.org), ad
 pod 'Ohana', '~> 1.0'
 ```
 
-## Example App
+## Running the Examples App
 
-To run the example app, clone the repo, and run `pod install` from the Example directory, then open `Ohana.xcworkspace` and run the `OhanaExample` scheme.
+* Clone the repo `git clone git@github.com:uber/ohana-ios.git`
+* Open the Example directory `cd ohana-ios/Example`
+* run `pod install`
+* `open Ohana.xcworkspace` 
+* Run the `OhanaExample` scheme 
 
 ## Authors
 
