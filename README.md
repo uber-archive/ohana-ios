@@ -29,7 +29,7 @@ pod 'Ohana', '~> 1.0'
 * Open the Example directory `cd ohana-ios/Example`
 * run `pod install`
 * `open Ohana.xcworkspace` 
-* Run the `OhanaExample` scheme 
+* Run the `OhanaExample` scheme in Xcode
 
 ## Authors
 
