@@ -63,7 +63,9 @@
 
         [self.dataSource.onContactsDataSourceReadySignal addObserver:self callback:^(typeof(self) self) {
             self.fuzzyMatchingUtility = [[OHFuzzyMatchingUtility alloc] initWithContacts:self.dataSource.contacts];
-            [self.tableView reloadData];
+            dispatch_async(dispatch_get_main_queue(), ^(){
+                [self.tableView reloadData];
+            });
         }];
 
         [self.dataSource.onContactsDataSourceSelectedContactsSignal addObserver:self callback:^(typeof(self) self, NSOrderedSet<OHContact *> * _Nonnull selectedContacts) {
