@@ -13,12 +13,12 @@
     "Doug Togno": "dtogno@uber.com"
   },
   "source": {
-    "git": "https://github.com/uber/Ohana.git",
+    "git": "https://github.com/uber/ohana-ios.git",
     "tag": "1.0.0"
   },
   "requires_arc": true,
   "platforms": {
-    "ios": "8.0"
+    "ios": "7.0"
   },
   "source_files": "Ohana/Classes/**/*.{h,m}",
   "frameworks": [
@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "UberSignals": [
-      "~> 2.5"
+      "~> 2.0"
     ],
     "libPhoneNumber-iOS": [
       "~> 0.8"

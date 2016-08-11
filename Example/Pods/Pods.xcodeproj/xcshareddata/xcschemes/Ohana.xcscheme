@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BC271BEB67D1C520F4626621'
+               BlueprintIdentifier = '45B28A3305482DE4297B9C47'
                BlueprintName = 'Ohana'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Ohana.framework'>
