@@ -86,7 +86,10 @@ class OHBasicContactPhotosPicker : UITableViewController, OHCNContactsDataProvid
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.contacts!.count
+        if let contacts = dataSource.contacts {
+            return contacts.count
+        }
+        return 1
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -102,6 +105,8 @@ class OHBasicContactPhotosPicker : UITableViewController, OHCNContactsDataProvid
             } else {
                 cell.backgroundColor = UIColor.whiteColor()
             }
+        } else {
+            cell.textLabel?.text = "No contacts access, open Settings app to fix this"
         }
 
         return cell
