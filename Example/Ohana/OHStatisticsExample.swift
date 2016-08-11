@@ -27,13 +27,27 @@ import Foundation
 import Ohana
 
 class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddressBookContactsDataProviderDelegate {
+    var presenter : UIViewController?
+
     func generateStatistics(presenter: UIViewController) {
+        self.presenter = presenter
         var dataProvider: OHContactsDataProviderProtocol
         if #available(iOS 9.0, *) {
             dataProvider = OHCNContactsDataProvider(delegate: self)
         } else {
             dataProvider = OHABAddressBookContactsDataProvider(delegate: self)
         }
+
+        dataProvider.onContactsDataProviderErrorSignal.addObserver(self, callback: { (self) in
+            let alertController = UIAlertController(title: "No Contacts Access",
+                message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .Alert)
+
+            alertController.addAction(UIAlertAction(title: "OK", style: .Cancel) { (action) in
+                presenter.dismissViewControllerAnimated(true, completion: nil)
+            })
+
+            presenter.presentViewController(alertController, animated: true, completion: nil)
+        })
 
         if #available(iOS 9.0, *) {
             let statsProcessor = OHStatisticsPostProcessor()
@@ -77,6 +91,17 @@ class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddr
         store.requestAccessForEntityType(.Contacts) { (granted, error) in
             if granted {
                 dataProvider.loadContacts()
+            } else {
+                dispatch_async(dispatch_get_main_queue()) {
+                    let alertController = UIAlertController(title: "No Contacts Access",
+                                                            message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .Alert)
+
+                    alertController.addAction(UIAlertAction(title: "OK", style: .Cancel) { [weak self] (action) in
+                        self?.presenter?.dismissViewControllerAnimated(true, completion: nil)
+                        })
+
+                    self.presenter?.presentViewController(alertController, animated: true, completion: nil)
+                }
             }
         }
     }
@@ -87,6 +112,17 @@ class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddr
         ABAddressBookRequestAccessWithCompletion(nil) { (granted, error) in
             if granted {
                 dataProvider.loadContacts()
+            } else {
+                dispatch_async(dispatch_get_main_queue()) {
+                    let alertController = UIAlertController(title: "No Contacts Access",
+                                                            message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .Alert)
+
+                    alertController.addAction(UIAlertAction(title: "OK", style: .Cancel) { [weak self] (action) in
+                        self?.presenter?.dismissViewControllerAnimated(true, completion: nil)
+                        })
+
+                    self.presenter?.presentViewController(alertController, animated: true, completion: nil)
+                }
             }
         }
     }
