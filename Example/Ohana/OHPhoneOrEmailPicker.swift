@@ -51,7 +51,9 @@ class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDeleg
         dataSource = OHContactsDataSource(dataProviders: NSOrderedSet(objects: dataProvider), postProcessors: NSOrderedSet(objects: compositePhoneEmailProcessor, alphabeticalSortProcessor))
 
         dataSource?.onContactsDataSourceReadySignal.addObserver(self, callback: { (self) in
-            self.tableView?.reloadData()
+            dispatch_async(dispatch_get_main_queue()) {
+                self.tableView?.reloadData()
+            }
         })
 
         dataSource?.onContactsDataSourceSelectedContactsSignal.addObserver(self, callback: { (self, selectedContacts: NSOrderedSet) in
@@ -105,7 +107,7 @@ class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDeleg
         if let contacts = dataSource?.contacts {
             return contacts.count
         }
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -114,6 +116,8 @@ class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDeleg
         if let contact = dataSource?.contacts?.objectAtIndex(indexPath.row) as? OHContact {
             cell.textLabel?.text = displayTitleForContact(contact)
             cell.detailTextLabel?.text = displaySubtitleForContact(contact)
+        } else {
+            cell.textLabel?.text = "No contacts access, open Settings app to fix this"
         }
 
         return cell
@@ -127,7 +131,6 @@ class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDeleg
             tableView.deselectRowAtIndexPath(indexPath, animated: true)
             dataSource?.deselectContacts(NSOrderedSet(object: contact))
         }
-
     }
 
     // MARK: Private
