@@ -87,36 +87,56 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [self.contactsByLetter count];
+    if (self.dataSource.contacts) {
+        return [self.contactsByLetter count];
+    } else {
+        return 1;
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[self.contactsByLetter objectForKey:[self.sections objectAtIndex:section]] count];
+    if (self.dataSource.contacts) {
+        return [[self.contactsByLetter objectForKey:[self.sections objectAtIndex:section]] count];
+    } else {
+        return 1;
+    }
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return [self.sections objectAtIndex:section];
+    if (self.dataSource.contacts) {
+        return [self.sections objectAtIndex:section];
+    } else {
+        return nil;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    OHContact *contact = [[self.contactsByLetter objectForKey:[self.sections objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
-
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"ContactCell"];
-    cell.textLabel.text = [self _displayNameForContact:contact];
-    cell.imageView.image = contact.thumbnailPhoto;
+    
+    if (self.dataSource.contacts) {
+        OHContact *contact = [[self.contactsByLetter objectForKey:[self.sections objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
+
+        cell.textLabel.text = [self _displayNameForContact:contact];
+        cell.imageView.image = contact.thumbnailPhoto;
+    } else {
+        cell.textLabel.text = @"No contacts access, open Settings app to fix this";
+    }
+
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    OHContact *contact = [[self.contactsByLetter objectForKey:[self.sections objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
+    if (self.dataSource.contacts) {
+        OHContact *contact = [[self.contactsByLetter objectForKey:[self.sections objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
 
-    [self.dataSource selectContacts:[NSOrderedSet orderedSetWithObject:contact]];
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self.dataSource deselectContacts:[NSOrderedSet orderedSetWithObject:contact]];
+        [self.dataSource selectContacts:[NSOrderedSet orderedSetWithObject:contact]];
+        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+        [self.dataSource deselectContacts:[NSOrderedSet orderedSetWithObject:contact]];
+    }
 }
 
 #pragma mark - OHCNContactsDataProviderDelegate
