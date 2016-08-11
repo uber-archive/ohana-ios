@@ -61,7 +61,9 @@ class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProvi
         dataSource.selectionFilters = NSOrderedSet(object: maximumSelectedFilter)
 
         dataSource.onContactsDataSourceReadySignal.addObserver(self, callback: { (self) in
-            self.tableView?.reloadData()
+            dispatch_async(dispatch_get_main_queue()) {
+                self.tableView?.reloadData()
+            }
         })
         
         dataSource.loadContacts()
@@ -100,7 +102,10 @@ class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProvi
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.contacts!.count
+        if let contacts = dataSource.contacts {
+            return contacts.count
+        }
+        return 1
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -114,6 +119,8 @@ class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProvi
             } else {
                 cell.backgroundColor = UIColor.whiteColor()
             }
+        } else {
+            cell.textLabel?.text = "No contacts access"
         }
 
         return cell
