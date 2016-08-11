@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.authors          = { 'Nick Entin' => 'entin@uber.com',
                          'Maxwell Elliott' => 'maxwelle@uber.com',
                          'Doug Togno' => 'dtogno@uber.com' }
-  s.source           = { :git => 'https://github.com/uber/Ohana.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/uber/ohana-ios.git', :tag => s.version.to_s }
   s.requires_arc     = true
 
   s.ios.deployment_target = '7.0'
