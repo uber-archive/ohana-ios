@@ -84,26 +84,36 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataSource.contacts.count;
+    if (self.dataSource.contacts) {
+        return self.dataSource.contacts.count;
+    } else {
+        return 1;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"ContactCell"];
-    
-    OHContact *contact = [self.dataSource.contacts objectAtIndex:indexPath.row];
-    cell.textLabel.text = [self _displayTitleForContact:contact];
-    cell.detailTextLabel.text = [self _displaySubtitleForContact:contact];
+
+    if (self.dataSource.contacts) {
+        OHContact *contact = [self.dataSource.contacts objectAtIndex:indexPath.row];
+        cell.textLabel.text = [self _displayTitleForContact:contact];
+        cell.detailTextLabel.text = [self _displaySubtitleForContact:contact];
+    } else {
+        cell.textLabel.text = @"No contacts access, open Settings app to fix this";
+    }
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    OHContact *contact = [self.dataSource.contacts objectAtIndex:indexPath.row];
+    if (self.dataSource.contacts) {
+        OHContact *contact = [self.dataSource.contacts objectAtIndex:indexPath.row];
 
-    [self.dataSource selectContacts:[NSOrderedSet orderedSetWithObject:contact]];
+        [self.dataSource selectContacts:[NSOrderedSet orderedSetWithObject:contact]];
+        [self.dataSource deselectContacts:[NSOrderedSet orderedSetWithObject:contact]];
+    }
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self.dataSource deselectContacts:[NSOrderedSet orderedSetWithObject:contact]];
 }
 
 #pragma mark - OHCNContactsDataProviderDelegate

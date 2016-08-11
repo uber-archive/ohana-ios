@@ -109,8 +109,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (self.searchController.searchBar.text.length) {
         return self.searchResults.count;
+    } else if (self.dataSource.contacts) {
+        return self.dataSource.contacts.count;
+    } else {
+        return 1;
     }
-    return self.dataSource.contacts.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -120,10 +123,12 @@
         OHContact *contact = [self.searchResults objectAtIndex:indexPath.row];
         cell.textLabel.attributedText = [self _attributedStringForString:[self _displayTitleForContact:contact] withSearchQuery:self.searchController.searchBar.text];
         cell.detailTextLabel.attributedText = [self _attributedStringForString:[self _displaySubtitleForContact:contact] withSearchQuery:self.searchController.searchBar.text];
-    } else {
+    } else if (self.dataSource.contacts) {
         OHContact *contact = [self.dataSource.contacts objectAtIndex:indexPath.row];
         cell.textLabel.text = [self _displayTitleForContact:contact];
         cell.detailTextLabel.text = [self _displaySubtitleForContact:contact];
+    } else {
+        cell.textLabel.text = @"No contacts access, open Settings app to fix this";
     }
 
     return cell;
@@ -131,15 +136,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     OHContact *contact;
     if (self.searchController.searchBar.text.length) {
         contact = [self.searchResults objectAtIndex:indexPath.row];
-    } else {
+    } else if (self.dataSource.contacts) {
         contact = [self.dataSource.contacts objectAtIndex:indexPath.row];
+    } else {
+        return;
     }
 
     [self.dataSource selectContacts:[NSOrderedSet orderedSetWithObject:contact]];
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self.dataSource deselectContacts:[NSOrderedSet orderedSetWithObject:contact]];
 }
 
