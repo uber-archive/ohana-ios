@@ -120,7 +120,7 @@ class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProvi
                 cell.backgroundColor = UIColor.whiteColor()
             }
         } else {
-            cell.textLabel?.text = "No contacts access"
+            cell.textLabel?.text = "No contacts access, open Settings app to fix this"
         }
 
         return cell
