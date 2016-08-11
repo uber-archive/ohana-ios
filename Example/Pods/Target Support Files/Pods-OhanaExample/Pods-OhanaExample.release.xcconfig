@@ -1,6 +1,8 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Ohana-iOS8.0" "$PODS_CONFIGURATION_BUILD_DIR/UberSignals-iOS8.0" "$PODS_CONFIGURATION_BUILD_DIR/libPhoneNumber-iOS-iOS8.0"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Ohana.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/UberSignals.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/libPhoneNumber_iOS.framework/Headers"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Ohana-iOS8.0/Ohana.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/UberSignals-iOS8.0/UberSignals.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/libPhoneNumber-iOS-iOS8.0/libPhoneNumber_iOS.framework/Headers"
 OTHER_LDFLAGS = $(inherited) -framework "Ohana" -framework "UberSignals" -framework "libPhoneNumber_iOS"
-PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-OhanaExample
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods

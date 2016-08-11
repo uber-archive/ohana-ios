@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3694723AD41845FB19848F47 /* Pods_OhanaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4980AD4B96DE225FBAB576E1 /* Pods_OhanaTests.framework */; };
+		2CB1BE89C619DC1A28189057 /* Pods_OhanaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC4AED7946A2A0067A56BE6 /* Pods_OhanaTests.framework */; };
+		2FD68426A143BC90719BF777 /* Pods_OhanaExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4031BA41A9346DBE0F6394 /* Pods_OhanaExample.framework */; };
 		3D0089C61D56E55B00D6863A /* OHCompositeAndPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089C51D56E55B00D6863A /* OHCompositeAndPostProcessorTests.m */; };
 		3D0089CC1D56EA4400D6863A /* OHCompositeOrPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089CB1D56EA4400D6863A /* OHCompositeOrPostProcessorTests.m */; };
 		3D0089D21D56EEBD00D6863A /* OHRequiredFieldPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089D11D56EEBD00D6863A /* OHRequiredFieldPostProcessorTests.m */; };
@@ -48,7 +49,6 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		63E935976EC41F2BED0B16D4 /* Pods_OhanaExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6920528169D1F437291B06B2 /* Pods_OhanaExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2DD122C8354999B3B96C509C /* Pods-OhanaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample.release.xcconfig"; sourceTree = "<group>"; };
-		3A5FC36E984DA2CEBD05FFCA /* Pods-OhanaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0EAB4D807A963449591E2EA8 /* Pods-OhanaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample.release.xcconfig"; sourceTree = "<group>"; };
+		1A4031BA41A9346DBE0F6394 /* Pods_OhanaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0089C01D55798800D6863A /* NSOrderedSetMake+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOrderedSetMake+Internal.h"; sourceTree = "<group>"; };
 		3D0089C51D56E55B00D6863A /* OHCompositeAndPostProcessorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCompositeAndPostProcessorTests.m; sourceTree = "<group>"; };
 		3D0089CB1D56EA4400D6863A /* OHCompositeOrPostProcessorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCompositeOrPostProcessorTests.m; sourceTree = "<group>"; };
@@ -100,8 +100,7 @@
 		3DDA91381D5BC3F90034644A /* OHMaximumSelectedCountPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OHMaximumSelectedCountPicker.swift; sourceTree = "<group>"; };
 		3DE7FC071D59C57C001F427C /* OHFuzzySearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHFuzzySearchTableViewController.h; sourceTree = "<group>"; };
 		3DE7FC081D59C57C001F427C /* OHFuzzySearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHFuzzySearchTableViewController.m; sourceTree = "<group>"; };
-		4980AD4B96DE225FBAB576E1 /* Pods_OhanaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		529CB4448FB4701E02164157 /* Pods-OhanaExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample.debug.xcconfig"; sourceTree = "<group>"; };
+		3FC4AED7946A2A0067A56BE6 /* Pods_OhanaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* OhanaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OhanaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,11 +117,12 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6920528169D1F437291B06B2 /* Pods_OhanaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83121B722A4215A7EB7D19A5 /* Pods-OhanaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests.release.xcconfig"; sourceTree = "<group>"; };
+		71EC68375279D3CE37FA943E /* Pods-OhanaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests.release.xcconfig"; sourceTree = "<group>"; };
 		ACE7A581ACB5DE2E33615F85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D28845244B7FAFC2B0357393 /* Pods-OhanaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D76C9ACD3623918B06F69FA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DF25D9B4B58EA8865D06A2F6 /* Ohana.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Ohana.podspec; path = ../Ohana.podspec; sourceTree = "<group>"; };
+		F2273BE2DE72D6CB249484FA /* Pods-OhanaExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				63E935976EC41F2BED0B16D4 /* Pods_OhanaExample.framework in Frameworks */,
+				2FD68426A143BC90719BF777 /* Pods_OhanaExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +144,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				3694723AD41845FB19848F47 /* Pods_OhanaTests.framework in Frameworks */,
+				2CB1BE89C619DC1A28189057 /* Pods_OhanaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +235,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				8EEDFCD49FA966D767DA93CF /* Pods */,
+				B2D91AB306DBA2FC2C6D1BAA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,8 +255,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				6920528169D1F437291B06B2 /* Pods_OhanaExample.framework */,
-				4980AD4B96DE225FBAB576E1 /* Pods_OhanaTests.framework */,
+				1A4031BA41A9346DBE0F6394 /* Pods_OhanaExample.framework */,
+				3FC4AED7946A2A0067A56BE6 /* Pods_OhanaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -344,13 +344,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		8EEDFCD49FA966D767DA93CF /* Pods */ = {
+		B2D91AB306DBA2FC2C6D1BAA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				529CB4448FB4701E02164157 /* Pods-OhanaExample.debug.xcconfig */,
-				2DD122C8354999B3B96C509C /* Pods-OhanaExample.release.xcconfig */,
-				3A5FC36E984DA2CEBD05FFCA /* Pods-OhanaTests.debug.xcconfig */,
-				83121B722A4215A7EB7D19A5 /* Pods-OhanaTests.release.xcconfig */,
+				F2273BE2DE72D6CB249484FA /* Pods-OhanaExample.debug.xcconfig */,
+				0EAB4D807A963449591E2EA8 /* Pods-OhanaExample.release.xcconfig */,
+				D28845244B7FAFC2B0357393 /* Pods-OhanaTests.debug.xcconfig */,
+				71EC68375279D3CE37FA943E /* Pods-OhanaTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -362,12 +362,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "OhanaExample" */;
 			buildPhases = (
-				CBFB62782601E986C1274588 /* Check Pods Manifest.lock */,
+				46C2B4165DEDE974843C796B /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				CBACFD73390A3B7406BBD4C5 /* Embed Pods Frameworks */,
-				9CC8EF40FFA55B0E7A10DB67 /* Copy Pods Resources */,
+				AF1AAFAA8907FEDD6005967A /* [CP] Embed Pods Frameworks */,
+				C21791BBB367E85F303FEDE2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -382,12 +382,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "OhanaTests" */;
 			buildPhases = (
-				2133287DF9825B0BFC261AB7 /* Check Pods Manifest.lock */,
+				AE25F07C1393C19CA4E668FD /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				0F2E912E6CAAC51A60AB1956 /* Embed Pods Frameworks */,
-				3F09F53EF8B8B88F8BA503FE /* Copy Pods Resources */,
+				4682BA6A4F568737D9457FAB /* [CP] Embed Pods Frameworks */,
+				A45A893824C3155A483CDF3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -456,14 +456,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F2E912E6CAAC51A60AB1956 /* Embed Pods Frameworks */ = {
+		4682BA6A4F568737D9457FAB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,14 +471,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2133287DF9825B0BFC261AB7 /* Check Pods Manifest.lock */ = {
+		46C2B4165DEDE974843C796B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,14 +486,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3F09F53EF8B8B88F8BA503FE /* Copy Pods Resources */ = {
+		A45A893824C3155A483CDF3E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,29 +501,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9CC8EF40FFA55B0E7A10DB67 /* Copy Pods Resources */ = {
+		AE25F07C1393C19CA4E668FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		CBACFD73390A3B7406BBD4C5 /* Embed Pods Frameworks */ = {
+		AF1AAFAA8907FEDD6005967A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,19 +531,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CBFB62782601E986C1274588 /* Check Pods Manifest.lock */ = {
+		C21791BBB367E85F303FEDE2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -698,7 +698,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 529CB4448FB4701E02164157 /* Pods-OhanaExample.debug.xcconfig */;
+			baseConfigurationReference = F2273BE2DE72D6CB249484FA /* Pods-OhanaExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -718,7 +718,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DD122C8354999B3B96C509C /* Pods-OhanaExample.release.xcconfig */;
+			baseConfigurationReference = 0EAB4D807A963449591E2EA8 /* Pods-OhanaExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -737,7 +737,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A5FC36E984DA2CEBD05FFCA /* Pods-OhanaTests.debug.xcconfig */;
+			baseConfigurationReference = D28845244B7FAFC2B0357393 /* Pods-OhanaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -761,7 +761,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83121B722A4215A7EB7D19A5 /* Pods-OhanaTests.release.xcconfig */;
+			baseConfigurationReference = 71EC68375279D3CE37FA943E /* Pods-OhanaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
