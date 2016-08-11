@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CB1BE89C619DC1A28189057 /* Pods_OhanaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC4AED7946A2A0067A56BE6 /* Pods_OhanaTests.framework */; };
-		2FD68426A143BC90719BF777 /* Pods_OhanaExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4031BA41A9346DBE0F6394 /* Pods_OhanaExample.framework */; };
 		3D0089C61D56E55B00D6863A /* OHCompositeAndPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089C51D56E55B00D6863A /* OHCompositeAndPostProcessorTests.m */; };
 		3D0089CC1D56EA4400D6863A /* OHCompositeOrPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089CB1D56EA4400D6863A /* OHCompositeOrPostProcessorTests.m */; };
 		3D0089D21D56EEBD00D6863A /* OHRequiredFieldPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089D11D56EEBD00D6863A /* OHRequiredFieldPostProcessorTests.m */; };
@@ -49,6 +47,8 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		8ACBD4D8CED0FA6424E9CB57 /* libPods-OhanaExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A69A64CF5DB1791EA1310665 /* libPods-OhanaExample.a */; };
+		E2BBD718FD87866F7111D242 /* libPods-OhanaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBADCD9BF2001443E35FC4EF /* libPods-OhanaTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,6 @@
 
 /* Begin PBXFileReference section */
 		0EAB4D807A963449591E2EA8 /* Pods-OhanaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample.release.xcconfig"; sourceTree = "<group>"; };
-		1A4031BA41A9346DBE0F6394 /* Pods_OhanaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0089C01D55798800D6863A /* NSOrderedSetMake+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOrderedSetMake+Internal.h"; sourceTree = "<group>"; };
 		3D0089C51D56E55B00D6863A /* OHCompositeAndPostProcessorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCompositeAndPostProcessorTests.m; sourceTree = "<group>"; };
 		3D0089CB1D56EA4400D6863A /* OHCompositeOrPostProcessorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCompositeOrPostProcessorTests.m; sourceTree = "<group>"; };
@@ -100,7 +99,6 @@
 		3DDA91381D5BC3F90034644A /* OHMaximumSelectedCountPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OHMaximumSelectedCountPicker.swift; sourceTree = "<group>"; };
 		3DE7FC071D59C57C001F427C /* OHFuzzySearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHFuzzySearchTableViewController.h; sourceTree = "<group>"; };
 		3DE7FC081D59C57C001F427C /* OHFuzzySearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHFuzzySearchTableViewController.m; sourceTree = "<group>"; };
-		3FC4AED7946A2A0067A56BE6 /* Pods_OhanaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* OhanaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OhanaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,9 +116,11 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71EC68375279D3CE37FA943E /* Pods-OhanaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests.release.xcconfig"; sourceTree = "<group>"; };
+		A69A64CF5DB1791EA1310665 /* libPods-OhanaExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OhanaExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE7A581ACB5DE2E33615F85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D28845244B7FAFC2B0357393 /* Pods-OhanaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D76C9ACD3623918B06F69FA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DBADCD9BF2001443E35FC4EF /* libPods-OhanaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OhanaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF25D9B4B58EA8865D06A2F6 /* Ohana.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Ohana.podspec; path = ../Ohana.podspec; sourceTree = "<group>"; };
 		F2273BE2DE72D6CB249484FA /* Pods-OhanaExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,7 +133,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				2FD68426A143BC90719BF777 /* Pods_OhanaExample.framework in Frameworks */,
+				8ACBD4D8CED0FA6424E9CB57 /* libPods-OhanaExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +144,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				2CB1BE89C619DC1A28189057 /* Pods_OhanaTests.framework in Frameworks */,
+				E2BBD718FD87866F7111D242 /* libPods-OhanaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +255,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				1A4031BA41A9346DBE0F6394 /* Pods_OhanaExample.framework */,
-				3FC4AED7946A2A0067A56BE6 /* Pods_OhanaTests.framework */,
+				A69A64CF5DB1791EA1310665 /* libPods-OhanaExample.a */,
+				DBADCD9BF2001443E35FC4EF /* libPods-OhanaTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

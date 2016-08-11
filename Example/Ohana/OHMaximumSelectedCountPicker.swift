@@ -24,7 +24,6 @@
 //
 
 import UIKit
-import Ohana
 
 class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProviderDelegate, OHABAddressBookContactsDataProviderDelegate {
 

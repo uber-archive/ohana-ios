@@ -23,7 +23,7 @@
 //	THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #import "OHContactField.h"
 #import "OHContactAddress.h"

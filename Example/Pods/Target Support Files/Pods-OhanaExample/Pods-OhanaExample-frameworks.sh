@@ -82,14 +82,3 @@ strip_invalid_archs() {
   fi
 }
 
-
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/Ohana-iOS8.0/Ohana.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/UberSignals-iOS8.0/UberSignals.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/libPhoneNumber-iOS-iOS8.0/libPhoneNumber_iOS.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/Ohana-iOS8.0/Ohana.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/UberSignals-iOS8.0/UberSignals.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/libPhoneNumber-iOS-iOS8.0/libPhoneNumber_iOS.framework"
-fi

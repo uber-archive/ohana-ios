@@ -24,7 +24,6 @@
 //
 
 import UIKit
-import Ohana
 
 class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDelegate, OHABAddressBookContactsDataProviderDelegate {
 
