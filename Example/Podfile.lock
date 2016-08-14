@@ -1,7 +1,7 @@
 PODS:
   - libPhoneNumber-iOS (0.8.15)
   - OCMock (3.3.1)
-  - Ohana (1.0.0):
+  - Ohana (1.0.1):
     - libPhoneNumber-iOS (~> 0.8)
     - UberSignals (~> 2.0)
   - UberSignals (2.5.0)
@@ -12,14 +12,14 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   Ohana:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   libPhoneNumber-iOS: 62a740e1ea5741060f5cec0f788b52071115cf31
   OCMock: f3f61e6eaa16038c30caa5798c5e49d3307b6f22
-  Ohana: e149dadcf2e83e614dbb910bbc93ba5ccc80a389
+  Ohana: 198dfc42455ab4673b410291f055d935f60a878f
   UberSignals: abd80d8aa926828e30b75d3bd79d6ed07e4ed08a
 
-PODFILE CHECKSUM: 82b753b8807a127adaf0a1b75fe16f1d35686dcf
+PODFILE CHECKSUM: 8a134e8d5b5577591197f0fade46fc02338c6f83
 
 COCOAPODS: 1.0.1

@@ -25,7 +25,7 @@
 
 #import "OHPhoneNumberFormattingPostProcessor.h"
 
-#import <libPhoneNumber-iOS/NBPhoneNumberUtil.h>
+#import <libPhoneNumber_iOS/NBPhoneNumberUtil.h>
 
 @interface OHPhoneNumberFormattingPostProcessor ()
 

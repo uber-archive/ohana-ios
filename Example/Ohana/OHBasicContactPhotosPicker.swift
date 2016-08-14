@@ -24,6 +24,7 @@
 //
 
 import UIKit
+import Ohana
 
 class OHBasicContactPhotosPicker : UITableViewController, OHCNContactsDataProviderDelegate, OHABAddressBookContactsDataProviderDelegate {
 

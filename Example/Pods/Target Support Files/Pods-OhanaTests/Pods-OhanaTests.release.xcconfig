@@ -1,8 +1,8 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/OCMock" "$PODS_CONFIGURATION_BUILD_DIR/Ohana-iOS8.3" "$PODS_CONFIGURATION_BUILD_DIR/UberSignals-iOS8.3" "$PODS_CONFIGURATION_BUILD_DIR/libPhoneNumber-iOS-iOS8.3"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/OCMock" "${PODS_ROOT}/Headers/Public/Ohana" "${PODS_ROOT}/Headers/Public/UberSignals" "${PODS_ROOT}/Headers/Public/libPhoneNumber-iOS"
-LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/OCMock" "$PODS_CONFIGURATION_BUILD_DIR/Ohana-iOS8.3" "$PODS_CONFIGURATION_BUILD_DIR/UberSignals-iOS8.3" "$PODS_CONFIGURATION_BUILD_DIR/libPhoneNumber-iOS-iOS8.3"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/OCMock" -isystem "${PODS_ROOT}/Headers/Public/Ohana" -isystem "${PODS_ROOT}/Headers/Public/UberSignals" -isystem "${PODS_ROOT}/Headers/Public/libPhoneNumber-iOS"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"OCMock" -l"Ohana-iOS8.3" -l"UberSignals-iOS8.3" -l"libPhoneNumber-iOS-iOS8.3" -framework "AddressBook" -framework "Contacts" -framework "CoreTelephony" -framework "Foundation"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/OCMock/OCMock.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Ohana-iOS8.3/Ohana.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/UberSignals-iOS8.3/UberSignals.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/libPhoneNumber-iOS-iOS8.3/libPhoneNumber_iOS.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "OCMock" -framework "Ohana" -framework "UberSignals" -framework "libPhoneNumber_iOS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods
