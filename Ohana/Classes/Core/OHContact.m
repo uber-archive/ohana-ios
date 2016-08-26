@@ -55,6 +55,7 @@
 - (id)copyWithZone:(NSZone *)zone
 {
     OHContact *copy = [[OHContact alloc] init];
+    copy.identifier = [self.identifier copy];
     copy.fullName = [self.fullName copy];
     copy.firstName = [self.firstName copy];
     copy.lastName = [self.lastName copy];
@@ -73,7 +74,8 @@
 
 - (BOOL)isEqualToContact:(OHContact *)contact
 {
-    return  ((!self.fullName && !contact.fullName) || [self.fullName isEqualToString:contact.fullName]) &&
+    return  [self.identifier isEqualToString:contact.identifier] && 
+            ((!self.fullName && !contact.fullName) || [self.fullName isEqualToString:contact.fullName]) &&
             ((!self.firstName && !contact.firstName) || [self.firstName isEqualToString:contact.firstName]) &&
             ((!self.lastName && !contact.lastName) || [self.lastName isEqualToString:contact.lastName]) &&
             ((!self.organizationName && !contact.organizationName) || [self.organizationName isEqualToString:contact.organizationName]) &&
