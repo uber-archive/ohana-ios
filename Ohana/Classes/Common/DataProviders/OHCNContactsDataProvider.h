@@ -41,6 +41,8 @@ NS_CLASS_AVAILABLE_IOS(9_0)
 NS_CLASS_AVAILABLE_IOS(9_0)
 @interface OHCNContactsDataProvider : NSObject <OHContactsDataProviderProtocol>
 
+extern NSString *_Nonnull kOHCNContactsDataProviderContactIdentifierKey;  // Identifier unique among contacts on the device (NSString *)
+
 /**
  *  By default, the data provider does not load a thumbnail image to conserve space. Set this to `YES` to load thumbnail image.
  */
