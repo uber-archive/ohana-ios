@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import Ohana
 
 class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddressBookContactsDataProviderDelegate {
     var presenter : UIViewController?
