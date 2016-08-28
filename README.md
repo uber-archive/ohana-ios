@@ -2,6 +2,7 @@
 
 [![CI Status](http://img.shields.io/travis/uber/ohana-ios.svg?style=flat)](https://travis-ci.org/uber/ohana-ios)
 [![Version](https://img.shields.io/cocoapods/v/Ohana.svg?style=flat)](http://cocoapods.org/pods/Ohana)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Ohana.svg?style=flat)](http://cocoapods.org/pods/Ohana)
 [![Platform](https://img.shields.io/cocoapods/p/Ohana.svg?style=flat)](http://cocoapods.org/pods/Ohana)
 
@@ -18,11 +19,21 @@ Ohana is a framework for working with a user's contacts on the iOS platform. It 
 
 #### CocoaPods
 
-To integrate Ohana into your project using [CocoaPods](http://cocoapods.org), add the following line to your Podfile and run `pod install`:
+To integrate Ohana into your project using [CocoaPods](http://cocoapods.org), add the following line to your Podfile:
 
 ```ruby
-pod 'Ohana', '~> 1.1'
+pod 'Ohana', '~> 1.2'
 ```
+
+#### Carthage
+
+To consume Ohana using [Carthage](https://github.com/Carthage/Carthage) add this to your Cartfile:
+
+```
+github "uber/ohana-ios" ~> 1.2
+```
+
+You'll need to manually import Ohana, and its dependencies, libPhoneNumber and UberSignals.
 
 ## Running the Examples App
 
@@ -37,6 +48,7 @@ pod 'Ohana', '~> 1.1'
 * Nick Entin ([@NickEntin](https://github.com/NickEntin))
 * Maxwell Elliott (maxwelle@uber.com, [@maxwellE](https://github.com/maxwellE))
 * Doug Togno (dtogno@uber.com)
+* Adam Zethraeus (adamz@uber.com, [github](https://github.com/zethraeus))
 
 ## Contributions
 
