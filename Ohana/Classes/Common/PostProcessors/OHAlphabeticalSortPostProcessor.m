@@ -50,14 +50,28 @@
 {
     NSOrderedSet<OHContact *> *processedContacts = [NSOrderedSet orderedSetWithArray:[preProcessedContacts sortedArrayUsingComparator:^NSComparisonResult(OHContact *contact1, OHContact *contact2) {
         if (![self _comparableFieldForContact:contact1].length) {
-            return [self _comparableFieldForContact:contact2].length ? NSOrderedDescending : NSOrderedSame;
+            return [self _comparableFieldForContact:contact2].length ? NSOrderedDescending : [self _secondaryComparisonOfContact:contact1 againstContact:contact2];
         } else if (![self _comparableFieldForContact:contact2].length) {
             return NSOrderedAscending;
         }
-        return [[self _comparableFieldForContact:contact1] compare:[self _comparableFieldForContact:contact2]];
+        NSComparisonResult comparison = [[self _comparableFieldForContact:contact1] compare:[self _comparableFieldForContact:contact2]];
+        if (comparison == NSOrderedSame) {
+            comparison = [self _secondaryComparisonOfContact:contact1 againstContact:contact2];
+        }
+        return comparison;
     }]];
     self.onContactsPostProcessorFinishedSignal.fire(processedContacts, self);
     return processedContacts;
+}
+
+- (NSComparisonResult)_secondaryComparisonOfContact:(OHContact *)contact1 againstContact:(OHContact *)contact2
+{
+    if (![self _secondaryComparableFieldForContact:contact1].length) {
+        return [self _secondaryComparableFieldForContact:contact2].length ? NSOrderedDescending : NSOrderedSame;
+    } else if (![self _secondaryComparableFieldForContact:contact2].length) {
+        return NSOrderedAscending;
+    }
+    return [[self _secondaryComparableFieldForContact:contact1] compare:[self _secondaryComparableFieldForContact:contact2]];
 }
 
 - (NSString *)_comparableFieldForContact:(OHContact *)contact
@@ -69,6 +83,17 @@
             return contact.firstName;
         case OHAlphabeticalSortPostProcessorSortModeLastName:
             return contact.lastName;
+    }
+}
+
+- (NSString *)_secondaryComparableFieldForContact:(OHContact *)contact {
+    switch (self.sortMode) {
+        case OHAlphabeticalSortPostProcessorSortModeFullName:
+            return contact.fullName;
+        case OHAlphabeticalSortPostProcessorSortModeFirstName:
+            return contact.lastName;
+        case OHAlphabeticalSortPostProcessorSortModeLastName:
+            return contact.firstName;
     }
 }
 
