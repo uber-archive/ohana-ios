@@ -70,9 +70,9 @@
 		3DD358EEF580DB18FEA3548C88B13E36 /* NBMetadataCoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6F9880C34DCB43DD3D2334A1068AB /* NBMetadataCoreTest.m */; };
 		3E5C99C7C948E8620749DB54A873B0C2 /* NBNumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE00D040A4B4DF38130F15A1E5EF3F8 /* NBNumberFormat.m */; };
 		3F115115B0B0E0F736D73EB5F7211407 /* NBMetadataCoreTestMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C64241AF2F473B89A83A5822DE68AB6 /* NBMetadataCoreTestMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F6089DB1C1CF362B4543CDF755BFD2B /* libPhoneNumber-iOS-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB1BDBE812ACF9E593DDE63EE73F5344 /* libPhoneNumber-iOS-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F6089DB1C1CF362B4543CDF755BFD2B /* libPhoneNumber-iOS-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9829BA6709751F506526E31E63EB9554 /* libPhoneNumber-iOS-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F8D0B429AF6DB44222D2AFAEE552B60 /* NBMetadataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5DF682710E968A8AE6885C21108F46 /* NBMetadataHelper.m */; };
-		3FA212D5045B9CCE98642F13B9B81DE9 /* UberSignals-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC44B9152CCFACFE001F6B47DBEB5353 /* UberSignals-iOS8.0-dummy.m */; };
+		3FA212D5045B9CCE98642F13B9B81DE9 /* UberSignals-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9BC6D624EAD642E618D1E029E06E4 /* UberSignals-iOS8.0-dummy.m */; };
 		409435B4AEA9DC5CD528509299026001 /* OCMObserverRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = C7DC019A7834861AAAA75A970A620358 /* OCMObserverRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		416C2DD9E7038656F7A4281A2EFF699B /* OCPartialMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B2566765FB944EB9EB134FCC7FE761EA /* OCPartialMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		42498CF985FE0CE9DD90DD683266CC18 /* OCMInvocationExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 478A6236D363C60AD6D20CCC648651EC /* OCMInvocationExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -98,7 +98,7 @@
 		55107C79C22E46BA0E03017D2CD2E18B /* OCMBlockArgCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6E92EB8062849A6A7CA25A3892214 /* OCMBlockArgCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		562B1249DB54679B9EDAF7749FC82F4F /* OHRequiredFieldSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8744BE3117657C7D0A6B26A0BC37E71C /* OHRequiredFieldSelectionFilter.m */; };
 		5705EFA84BA26B2981DF1A40BB8875B9 /* OhanaCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B603646329CF5C3E97EC479B5B45F1 /* OhanaCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57203CB31A3551EF451152B435D0B14B /* Ohana-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 641C8B75C8073748FF890A20FACC135D /* Ohana-iOS8.0-dummy.m */; };
+		57203CB31A3551EF451152B435D0B14B /* Ohana-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE426A7950C886D46AB989099A3BAB /* Ohana-iOS8.0-dummy.m */; };
 		5AD200E0282948E9370C7E762E6E2EED /* NSValue+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2E95D0FFE9ECD8E69ACB551DAB27E /* NSValue+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5ADB0C6B5DAEA1AEB2C87F0F40D9BBFD /* OHStatisticsPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B03C3B66A3E32AF7D70EFD9030E166C /* OHStatisticsPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BA53A42B4B0FF9FEEAC39DFB8BBFD5D /* OCMock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A9441D450F166D32F402342386F514 /* OCMock-dummy.m */; };
@@ -112,7 +112,7 @@
 		616BF38A6C8DB0AA64CB231EC8398331 /* OHAlphabeticalSortPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 077C18E349B9065A6E23A1B727A0E5E9 /* OHAlphabeticalSortPostProcessor.m */; };
 		61951F55E72A85F89699527A9C69901E /* NSNotificationCenter+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE5515D85CDBE3F25E5208CDB96FC0 /* NSNotificationCenter+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		61CCAE42A1E69BF35C695E15C14D174C /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519A1B0B4F09E41749D40C72B55418BB /* Contacts.framework */; };
-		6248411A7DD6B4C757A847B4A1BFE50D /* UberSignals-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D852D9BEF5CF6A0A04DE64F739DF55B0 /* UberSignals-iOS8.3-dummy.m */; };
+		6248411A7DD6B4C757A847B4A1BFE50D /* UberSignals-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6836EBB5302A29881CCA703D96EF739E /* UberSignals-iOS8.3-dummy.m */; };
 		62BF6D63238CC113672727633D649629 /* OHContactsPostProcessorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B1721591678AE0E308FD8D7E4C3328 /* OHContactsPostProcessorProtocol.m */; };
 		65BD2EAA1888CC88B8CA7E28B4F9EAEB /* OCMLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E7AEE94A303EA8918C0CEF1149AD1D /* OCMLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6863410120C06460D76644AB6205A753 /* NBPhoneMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = EA2A138BC3A09DC3F900A113018DC407 /* NBPhoneMetaData.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -121,10 +121,10 @@
 		6A9CEA8CB89546F41ADA86364BD036CE /* OHContactsSelectionFilterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 032AF964D5F7900B4252D215472D2FA1 /* OHContactsSelectionFilterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B46D4B57AFCF03A251205AA32A88162 /* OHRequiredFieldSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8744BE3117657C7D0A6B26A0BC37E71C /* OHRequiredFieldSelectionFilter.m */; };
 		6CC12BC4E10DAD9B5FF8E2BA41A9C8A0 /* OCMReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1522CD09E92048BAD844AAD83740DC44 /* OCMReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6D7036C53A36F81A9F65F84D24F9C799 /* Ohana-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE7FA7A46AC3291AAB6CABA7D15ABC7 /* Ohana-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D7036C53A36F81A9F65F84D24F9C799 /* Ohana-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C27CC733D2FD64104C4A30317C9ACF /* Ohana-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ECBFAE2C1930EFC4FE25B941859F046 /* UBSignalObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E805F6826AAA69B90BBB16336A8226 /* UBSignalObserver.m */; };
 		6ED60777B8769FB9206AD6DB480C6975 /* OCMExpectationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B4BCF5DC78D8577E1ABF780834032C /* OCMExpectationRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6FBD967B98278F00D9B887546053E7FE /* Ohana-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBC6E976D48E94F06635213B3D3581C /* Ohana-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FBD967B98278F00D9B887546053E7FE /* Ohana-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DDD5E573AA5FD44E763DA06D7FB76D6 /* Ohana-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71D11C5381BD48EEBE41B761925A7602 /* OCClassMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 59667FDC2A6F1BEDDBBA54B0A04D62F0 /* OCClassMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		72DBF8436997011B3D5560FFB86BD337 /* OHABAddressBookContactsDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E25C7E58E5EFD7883247DBE843F1A73 /* OHABAddressBookContactsDataProvider.m */; };
 		73624C0AAD07AD61E6C49A33119F982D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FC6323374A225ECB055C905929D795 /* Foundation.framework */; };
@@ -145,7 +145,7 @@
 		828A6CE4F88922FCBAEFD1201C6DE519 /* OCMConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A68EECC7B6854C181278921CE170C90 /* OCMConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83063DF88B344CE5158C7C94FFD059D2 /* OHMaximumSelectedCountSelectionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E4600C1F39965411370D7C64E21DA64 /* OHMaximumSelectedCountSelectionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84C3F37595DA6FB6C6AD4E9E2A9D7928 /* OHContactsDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 0604C0226E71F954BFD0CD9C43C609A0 /* OHContactsDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86077E3642A3155B06666808EA2DD3F8 /* libPhoneNumber-iOS-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B286AE2EC91D065C802C51B070C0BD /* libPhoneNumber-iOS-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86077E3642A3155B06666808EA2DD3F8 /* libPhoneNumber-iOS-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A335C61C2A20EE4547B2BBD9106AEF5C /* libPhoneNumber-iOS-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A82C1BFD065417328609B4B499641C6 /* NBPhoneMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = EA2A138BC3A09DC3F900A113018DC407 /* NBPhoneMetaData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B3E5037C014ABA846BEFF1BCABC9CCE /* OHContactsPostProcessorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3151B6CF0B842A98E52E926887943146 /* OHContactsPostProcessorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C5DD88EB783ECE1685372C6630F085D /* OHRequiredFieldPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = AF079A4882B20BA9A60AD0F671E96CF7 /* OHRequiredFieldPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -160,7 +160,7 @@
 		90CA93B432C5B599BEC1BA32720C7136 /* OHFuzzyMatchingUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F021BFF18D29AEB021F50952F3B359 /* OHFuzzyMatchingUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9142F67621E2B555A2FEF259E5A5A123 /* OCMInvocationStub.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EAF3113F1623B232C0009FEECAEFB7 /* OCMInvocationStub.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		924869A06D77711868AC91B9F896FCDA /* OCMConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D52E85279649D3E0A59B50D78AA94D0 /* OCMConstraint.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		92D588BDABAA73D2F67AD0EDA9ED0DDF /* UberSignals-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B79119F59ED661A2E454206CA0CAFEB5 /* UberSignals-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92D588BDABAA73D2F67AD0EDA9ED0DDF /* UberSignals-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5CF953F46CBAFB69B5D773EF1385A3D /* UberSignals-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94C769945E904A57E8DD102865AE433E /* NBMetadataCoreTestMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04980FAFEED5F80591B7F57DBB8FC7C6 /* NBMetadataCoreTestMapper.m */; };
 		9501D11D86F452C48D5E33525B5C3C35 /* OCMFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBBD49767C3C1DC9F5FF456260FAF64 /* OCMFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		961B0CCE950D9819087921C2357123FA /* UBBaseSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F78C757FBD395E3D969B504F7A4FF4 /* UBBaseSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -206,14 +206,14 @@
 		BECD035A2A1BD69E8C435FEBEACBDE09 /* OHContactsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 428781BB8560FFAE7D2C688EABEABDBF /* OHContactsDataSource.m */; };
 		C05D524B6C0DF2D10D607E5888D75459 /* OHCompositeOrPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8222207C4F6504A3D90AA65DCA81EE4E /* OHCompositeOrPostProcessor.m */; };
 		C0FF4260F4F0D615CE0E22D281EA3A30 /* OHContactsDataProviderProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E68C2FAD219A05F0A5B898D4AF33BE1E /* OHContactsDataProviderProtocol.m */; };
-		C431F626C237C048A1C42E426527C62C /* Ohana-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F7ADE971989ABC6E9DA6BC1A60AB7 /* Ohana-iOS8.3-dummy.m */; };
-		C4364734654C9EEFDBE87294AF66DA80 /* libPhoneNumber-iOS-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D69E301A8B6777927CBC948561E3EF2 /* libPhoneNumber-iOS-iOS8.3-dummy.m */; };
+		C431F626C237C048A1C42E426527C62C /* Ohana-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8867BE0EB84C7245F43D5DCDA58BEF54 /* Ohana-iOS8.3-dummy.m */; };
+		C4364734654C9EEFDBE87294AF66DA80 /* libPhoneNumber-iOS-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE59211249DC8B6A001D31A6AA603A0 /* libPhoneNumber-iOS-iOS8.3-dummy.m */; };
 		C5027BC0AA3C6CD9222E2A3C00117273 /* OHCNContactsDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F65741417ACF6711C5754C4FDAFDC2C /* OHCNContactsDataProvider.m */; };
 		C6119FE01BA3A89F85B014AE0563AAB1 /* libPhoneNumber_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFD7B8E5384B107D23C2131509FE7CA /* libPhoneNumber_iOS.framework */; };
 		C70AF104FBDFA7E51AE4B52DB5F83E05 /* Ohana.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE7590FD95266A4FE2B37AB7BFB3B9A /* Ohana.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C71AD3F04B74D172F3D3A8F9240CD3BE /* UberSignals.h in Headers */ = {isa = PBXBuildFile; fileRef = 237A36FC473557E58A7CB0B797AEAA40 /* UberSignals.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C799A7140C76306D1943042D4A30CA28 /* libPhoneNumber-iOS-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D72B86EAB667CB4CCB3B2B1AF32FEA /* libPhoneNumber-iOS-iOS8.0-dummy.m */; };
-		C87E3F058FD4EF874F0120CFD078D44C /* UberSignals-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA433827CF864A88648917E17AAFB436 /* UberSignals-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C799A7140C76306D1943042D4A30CA28 /* libPhoneNumber-iOS-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2932A57B266A9454F781C3E9F317185 /* libPhoneNumber-iOS-iOS8.0-dummy.m */; };
+		C87E3F058FD4EF874F0120CFD078D44C /* UberSignals-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D4FBB0CFFC28867A3501DE6061CD937 /* UberSignals-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9AE39FA22F94A0BFCAC1A7009A2104B /* NBMetadataCoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6F9880C34DCB43DD3D2334A1068AB /* NBMetadataCoreTest.m */; };
 		CA486CC72279C489774A7731058948CF /* OCMArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BC876EE9E24CF963B2723DA2A5091 /* OCMArg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CAE3874D7D0722E5635E73890F80F079 /* NBMetadataCoreTestMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C64241AF2F473B89A83A5822DE68AB6 /* NBMetadataCoreTestMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -365,56 +365,55 @@
 		0056FEF6809B284B9A468F86F6D30F08 /* OHCompositeAndPostProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHCompositeAndPostProcessor.m; sourceTree = "<group>"; };
 		02C8A6230C0BF481DBD807F328AD0A12 /* OHContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHContact.m; sourceTree = "<group>"; };
 		032AF964D5F7900B4252D215472D2FA1 /* OHContactsSelectionFilterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHContactsSelectionFilterProtocol.h; sourceTree = "<group>"; };
+		0423AF9501A9891AF0F4CABEBEDCFFDF /* Ohana-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Ohana-iOS8.0.modulemap"; sourceTree = "<group>"; };
 		04980FAFEED5F80591B7F57DBB8FC7C6 /* NBMetadataCoreTestMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCoreTestMapper.m; path = libPhoneNumber/NBMetadataCoreTestMapper.m; sourceTree = "<group>"; };
 		04B603646329CF5C3E97EC479B5B45F1 /* OhanaCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OhanaCommon.h; sourceTree = "<group>"; };
 		04CE5515D85CDBE3F25E5208CDB96FC0 /* NSNotificationCenter+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+OCMAdditions.m"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.m"; sourceTree = "<group>"; };
+		05640FF64ACDE70C2781471C6977D060 /* UberSignals-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UberSignals-iOS8.0.modulemap"; sourceTree = "<group>"; };
 		05BCC96A13A04E8A98B7B5A3770BE69A /* OCMRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMRecorder.h; path = Source/OCMock/OCMRecorder.h; sourceTree = "<group>"; };
-		05C85596D7345368534716D76C4A25EF /* Ohana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ohana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0604C0226E71F954BFD0CD9C43C609A0 /* OHContactsDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHContactsDataSource.h; sourceTree = "<group>"; };
 		077C18E349B9065A6E23A1B727A0E5E9 /* OHAlphabeticalSortPostProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHAlphabeticalSortPostProcessor.m; sourceTree = "<group>"; };
+		08419A5EE9AC3C8117AA4348F4972874 /* libPhoneNumber-iOS-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libPhoneNumber-iOS-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
 		0987582B5EFEAA6F6C0B3B51F32C188D /* NSValue+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+OCMAdditions.h"; path = "Source/OCMock/NSValue+OCMAdditions.h"; sourceTree = "<group>"; };
 		09D31E1ED627600F7FE5F444352BCC36 /* OCProtocolMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCProtocolMockObject.h; path = Source/OCMock/OCProtocolMockObject.h; sourceTree = "<group>"; };
 		0A247DDACB4FCF343E068DCD05426E49 /* OCObserverMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCObserverMockObject.m; path = Source/OCMock/OCObserverMockObject.m; sourceTree = "<group>"; };
+		0B447256874C25517D626EF4830F7599 /* libPhoneNumber-iOS-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "libPhoneNumber-iOS-iOS8.3-prefix.pch"; path = "../libPhoneNumber-iOS-iOS8.3/libPhoneNumber-iOS-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
+		0C83EE21050FF1FBDE1032C5BE93F2E2 /* libPhoneNumber-iOS-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "libPhoneNumber-iOS-iOS8.3.modulemap"; path = "../libPhoneNumber-iOS-iOS8.3/libPhoneNumber-iOS-iOS8.3.modulemap"; sourceTree = "<group>"; };
 		0E4600C1F39965411370D7C64E21DA64 /* OHMaximumSelectedCountSelectionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHMaximumSelectedCountSelectionFilter.h; sourceTree = "<group>"; };
-		0FC0E898D0D62FD36AA3E6367FB80E58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Ohana-iOS8.3/Info.plist"; sourceTree = "<group>"; };
 		0FC8D427443D5B5B34BEB46CDACF7B6D /* OCMExpectationRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMExpectationRecorder.h; path = Source/OCMock/OCMExpectationRecorder.h; sourceTree = "<group>"; };
 		109182EFF5EA5AA1B530E36AAD790843 /* OCClassMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCClassMockObject.h; path = Source/OCMock/OCClassMockObject.h; sourceTree = "<group>"; };
+		1315F6F372C87E7E7145F445666DF7B1 /* libPhoneNumber_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libPhoneNumber_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1522CD09E92048BAD844AAD83740DC44 /* OCMReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMReturnValueProvider.m; path = Source/OCMock/OCMReturnValueProvider.m; sourceTree = "<group>"; };
+		16DE426A7950C886D46AB989099A3BAB /* Ohana-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Ohana-iOS8.0-dummy.m"; sourceTree = "<group>"; };
 		16FA81B99AC36CBA6F613AABF308570E /* OhanaCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OhanaCore.h; sourceTree = "<group>"; };
 		17B32C89DBB1A9C302CAE2F8E7A7DE0C /* NSInvocation+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+OCMAdditions.m"; path = "Source/OCMock/NSInvocation+OCMAdditions.m"; sourceTree = "<group>"; };
 		19E8320E2D75F5A21FC8CF7D55D70D84 /* OHSplitOnFieldTypePostProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHSplitOnFieldTypePostProcessor.m; sourceTree = "<group>"; };
 		1A1092333DF37A53510E11A0A377ABA6 /* OHABAddressBookContactsDataProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHABAddressBookContactsDataProvider.h; sourceTree = "<group>"; };
-		1A4082BA4EEBD9B0F5B1E61D5B7A7E32 /* UberSignals-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UberSignals-iOS8.0.xcconfig"; sourceTree = "<group>"; };
+		1A88724B88C7A515CC3AEE0A073477A4 /* UberSignals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UberSignals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3EC3516B4E1E594D11BDC3A6898DFA /* Pods-OhanaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OhanaTests.modulemap"; sourceTree = "<group>"; };
 		1BFD7B8E5384B107D23C2131509FE7CA /* libPhoneNumber_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libPhoneNumber_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		214BF63E6C6F99755D825AF14CD213F6 /* OCMMacroState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMMacroState.m; path = Source/OCMock/OCMMacroState.m; sourceTree = "<group>"; };
 		22FC6323374A225ECB055C905929D795 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		237A36FC473557E58A7CB0B797AEAA40 /* UberSignals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UberSignals.h; path = UberSignals/UberSignals.h; sourceTree = "<group>"; };
-		2547DD32AA554781C1E0F65555A25E99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../libPhoneNumber-iOS-iOS8.3/Info.plist"; sourceTree = "<group>"; };
-		25A4A9D08FD1AFB5BD0238C59FA24F0F /* Ohana-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Ohana-iOS8.0.xcconfig"; sourceTree = "<group>"; };
 		266440FF2D0E8CF848B559FDB3E9414C /* OHRequiredPostalAddressPostProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHRequiredPostalAddressPostProcessor.h; sourceTree = "<group>"; };
 		27EAB486F9080E65BE9D19A30E3B6761 /* UBSignal+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UBSignal+Internal.h"; path = "UberSignals/UBSignal+Internal.h"; sourceTree = "<group>"; };
+		287C5C87756075C7797BE2BAF012ACA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28ED582B32BB423BC88FAB0F7A0C60CB /* OCMArgAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMArgAction.m; path = Source/OCMock/OCMArgAction.m; sourceTree = "<group>"; };
 		292302155ECA41A187C0F53E21F584B7 /* OCMMacroState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMMacroState.h; path = Source/OCMock/OCMMacroState.h; sourceTree = "<group>"; };
 		29C90AF13B9F14FBECA870792150653B /* UBSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UBSignal.h; path = UberSignals/UBSignal.h; sourceTree = "<group>"; };
-		2B2C5928D06B3B92BEA082D5B2B90FC0 /* UberSignals-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "UberSignals-iOS8.3.xcconfig"; path = "../UberSignals-iOS8.3/UberSignals-iOS8.3.xcconfig"; sourceTree = "<group>"; };
+		2AB63571566233C529A85CA24926810C /* UberSignals-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "UberSignals-iOS8.3.modulemap"; path = "../UberSignals-iOS8.3/UberSignals-iOS8.3.modulemap"; sourceTree = "<group>"; };
 		2CEC46747FE5BCA70846CF629E845AB8 /* NBPhoneNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumber.h; path = libPhoneNumber/NBPhoneNumber.h; sourceTree = "<group>"; };
-		2D69E301A8B6777927CBC948561E3EF2 /* libPhoneNumber-iOS-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "libPhoneNumber-iOS-iOS8.3-dummy.m"; path = "../libPhoneNumber-iOS-iOS8.3/libPhoneNumber-iOS-iOS8.3-dummy.m"; sourceTree = "<group>"; };
 		2EE943E4F8833A188AC5D05EE257C088 /* OCMVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMVerifier.h; path = Source/OCMock/OCMVerifier.h; sourceTree = "<group>"; };
 		2FE3550652339499A95CB5767AAD7A82 /* OHPhoneNumberFormattingPostProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHPhoneNumberFormattingPostProcessor.h; sourceTree = "<group>"; };
 		30313DA5AEBE20E71FEDA6CB8BF1AD35 /* OCMInvocationMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationMatcher.h; path = Source/OCMock/OCMInvocationMatcher.h; sourceTree = "<group>"; };
-		30AE503E7B095ABD032FC0F00742DB86 /* libPhoneNumber-iOS-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "libPhoneNumber-iOS-iOS8.3-prefix.pch"; path = "../libPhoneNumber-iOS-iOS8.3/libPhoneNumber-iOS-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
 		3151B6CF0B842A98E52E926887943146 /* OHContactsPostProcessorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHContactsPostProcessorProtocol.h; sourceTree = "<group>"; };
+		31CCC63C92AB8F136FF5D644BB3A9A18 /* Ohana-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Ohana-iOS8.3.modulemap"; path = "../Ohana-iOS8.3/Ohana-iOS8.3.modulemap"; sourceTree = "<group>"; };
 		33662D262F6BB145AB15CF1E8E4D0F0A /* Pods-OhanaExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OhanaExample-dummy.m"; sourceTree = "<group>"; };
 		34C2A98E0EF7A767BCEF3A693B53C565 /* NBPhoneMetaData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneMetaData.m; path = libPhoneNumber/NBPhoneMetaData.m; sourceTree = "<group>"; };
 		35BD7F2608243A765DA02C92AEBEB012 /* NBPhoneNumberDesc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumberDesc.h; path = libPhoneNumber/NBPhoneNumberDesc.h; sourceTree = "<group>"; };
-		365AEBF61B6EB23AA5E78D502A7B2579 /* libPhoneNumber-iOS-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "libPhoneNumber-iOS-iOS8.0.modulemap"; sourceTree = "<group>"; };
 		366AD210931E86163A14B205AF8605F7 /* UBSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UBSignal.m; path = UberSignals/UBSignal.m; sourceTree = "<group>"; };
-		383F7ADE971989ABC6E9DA6BC1A60AB7 /* Ohana-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Ohana-iOS8.3-dummy.m"; path = "../Ohana-iOS8.3/Ohana-iOS8.3-dummy.m"; sourceTree = "<group>"; };
 		397AFEAC541D143D10673DDFF9A6287E /* NBNumberFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBNumberFormat.h; path = libPhoneNumber/NBNumberFormat.h; sourceTree = "<group>"; };
-		3A2D46432CC3B4517B07DFE0531865E0 /* Ohana-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Ohana-iOS8.3-prefix.pch"; path = "../Ohana-iOS8.3/Ohana-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
-		3B55A411EE39332A967E687F84C68710 /* Ohana-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Ohana-iOS8.0.modulemap"; sourceTree = "<group>"; };
-		3CC31FDCB37F8DB67CCE051ECA2BE958 /* libPhoneNumber_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libPhoneNumber_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D1D7A64B928FCDEAC613B26D6477FA /* UberSignals-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UberSignals-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
 		3D7C65581424FCFCD7105E0829692B6F /* Pods-OhanaExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OhanaExample.modulemap"; sourceTree = "<group>"; };
 		4064C33D6E9F47EAC2050845BAB930C2 /* OCMBoxedReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBoxedReturnValueProvider.m; path = Source/OCMock/OCMBoxedReturnValueProvider.m; sourceTree = "<group>"; };
 		420D1A2B73551D8B183E66931B841F65 /* OCMObserverRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMObserverRecorder.m; path = Source/OCMock/OCMObserverRecorder.m; sourceTree = "<group>"; };
@@ -425,43 +424,49 @@
 		44AF6CDCD2FCBD55E375B7928E7A2AA1 /* Pods-OhanaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OhanaTests-resources.sh"; sourceTree = "<group>"; };
 		474174361BB0B743D89B4068CA049663 /* OCObserverMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCObserverMockObject.h; path = Source/OCMock/OCObserverMockObject.h; sourceTree = "<group>"; };
 		478A6236D363C60AD6D20CCC648651EC /* OCMInvocationExpectation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationExpectation.m; path = Source/OCMock/OCMInvocationExpectation.m; sourceTree = "<group>"; };
+		47CB01261BEF2B3FC400C6B092451010 /* Ohana-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Ohana-iOS8.3-prefix.pch"; path = "../Ohana-iOS8.3/Ohana-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
 		489CB7B037F84E2F028050B3253ACDC1 /* OCMStubRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMStubRecorder.h; path = Source/OCMock/OCMStubRecorder.h; sourceTree = "<group>"; };
 		4A174F12FDB0291C6747E146E1E13F28 /* OCMIndirectReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMIndirectReturnValueProvider.h; path = Source/OCMock/OCMIndirectReturnValueProvider.h; sourceTree = "<group>"; };
-		4A7557AF2D852306C5B1FF55857C9899 /* libPhoneNumber_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libPhoneNumber_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE292AE5E943E915201739F6096D38E /* OCMRealObjectForwarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMRealObjectForwarder.m; path = Source/OCMock/OCMRealObjectForwarder.m; sourceTree = "<group>"; };
 		4B8C46B46F5410C48156CDA6CE8FF0A0 /* Pods-OhanaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OhanaTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4BFB3BBDB35E318056AB2341448DFCF4 /* OHReverseOrderPostProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHReverseOrderPostProcessor.m; sourceTree = "<group>"; };
 		4C64241AF2F473B89A83A5822DE68AB6 /* NBMetadataCoreTestMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataCoreTestMapper.h; path = libPhoneNumber/NBMetadataCoreTestMapper.h; sourceTree = "<group>"; };
 		4E25C7E58E5EFD7883247DBE843F1A73 /* OHABAddressBookContactsDataProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHABAddressBookContactsDataProvider.m; sourceTree = "<group>"; };
 		4ECC2CD954E13644A87CEE449FCBE29A /* OHCompositeOrPostProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHCompositeOrPostProcessor.h; sourceTree = "<group>"; };
-		4EE7FA7A46AC3291AAB6CABA7D15ABC7 /* Ohana-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Ohana-iOS8.3-umbrella.h"; path = "../Ohana-iOS8.3/Ohana-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
 		502B3583D2283B7EACFF00651211429F /* NBMetadataCoreMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCoreMapper.m; path = libPhoneNumber/NBMetadataCoreMapper.m; sourceTree = "<group>"; };
 		519A1B0B4F09E41749D40C72B55418BB /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
 		531E0F5EF64C1070F59ED94C046D83D2 /* NBPhoneNumberDefines.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumberDefines.m; path = libPhoneNumber/NBPhoneNumberDefines.m; sourceTree = "<group>"; };
-		54B3AFD4CB2BFF4198317297EDA9574B /* UberSignals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UberSignals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5447F8F4A8CA2187AECF6AAABE657839 /* Ohana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ohana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E8DB78689EE5259240DBAF7C24947B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5713070DBE2C516B53CDE215F65A7D70 /* OHMaximumSelectedCountSelectionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHMaximumSelectedCountSelectionFilter.m; sourceTree = "<group>"; };
 		59667FDC2A6F1BEDDBBA54B0A04D62F0 /* OCClassMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCClassMockObject.m; path = Source/OCMock/OCClassMockObject.m; sourceTree = "<group>"; };
 		5A68EECC7B6854C181278921CE170C90 /* OCMConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = Source/OCMock/OCMConstraint.h; sourceTree = "<group>"; };
 		5C6C9B28DFC9F8EBE55DD3C82404502E /* OCMStubRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMStubRecorder.m; path = Source/OCMock/OCMStubRecorder.m; sourceTree = "<group>"; };
+		5CE63231688A97F97238814CD535C3CA /* Ohana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ohana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D4FBB0CFFC28867A3501DE6061CD937 /* UberSignals-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UberSignals-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
 		5EB0CA713ADEFC18013643A01D4D6771 /* OCMBlockCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockCaller.m; path = Source/OCMock/OCMBlockCaller.m; sourceTree = "<group>"; };
 		61B4BCF5DC78D8577E1ABF780834032C /* OCMExpectationRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMExpectationRecorder.m; path = Source/OCMock/OCMExpectationRecorder.m; sourceTree = "<group>"; };
 		6319407EBF2119D2C7214AC0CB85D5E1 /* OCMBlockArgCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBlockArgCaller.h; path = Source/OCMock/OCMBlockArgCaller.h; sourceTree = "<group>"; };
 		63E7AEE94A303EA8918C0CEF1149AD1D /* OCMLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMLocation.h; path = Source/OCMock/OCMLocation.h; sourceTree = "<group>"; };
-		641C8B75C8073748FF890A20FACC135D /* Ohana-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Ohana-iOS8.0-dummy.m"; sourceTree = "<group>"; };
-		64B8E831D9D53B01FE4C807EAFFBFCB1 /* Ohana-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ohana-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
 		65096279DFE86D87C8641E8D3959C3DD /* Pods-OhanaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OhanaTests-umbrella.h"; sourceTree = "<group>"; };
+		6521024C044A4821A7A6F6FD22A0F61C /* UberSignals-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UberSignals-iOS8.0.xcconfig"; sourceTree = "<group>"; };
 		6646581BC59673276B171C61B8BCF816 /* OCMReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMReturnValueProvider.h; path = Source/OCMock/OCMReturnValueProvider.h; sourceTree = "<group>"; };
-		67467A548012826F677B5748D4E870F0 /* Ohana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ohana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F78C757FBD395E3D969B504F7A4FF4 /* UBBaseSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UBBaseSignal.h; path = UberSignals/UBBaseSignal.h; sourceTree = "<group>"; };
-		6872DB5884E67ACE48A816AA4309B876 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6836EBB5302A29881CCA703D96EF739E /* UberSignals-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UberSignals-iOS8.3-dummy.m"; path = "../UberSignals-iOS8.3/UberSignals-iOS8.3-dummy.m"; sourceTree = "<group>"; };
 		6A7E2648155710F814EC4638418F9EE5 /* OHRequiredFieldSelectionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHRequiredFieldSelectionFilter.h; sourceTree = "<group>"; };
-		6B42BB69582FE4111391C3D59FA50C83 /* libPhoneNumber-iOS-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "libPhoneNumber-iOS-iOS8.3.modulemap"; path = "../libPhoneNumber-iOS-iOS8.3/libPhoneNumber-iOS-iOS8.3.modulemap"; sourceTree = "<group>"; };
+		6C9E1098532A6C652E0C61710E5AC6FB /* Pods_OhanaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE59211249DC8B6A001D31A6AA603A0 /* libPhoneNumber-iOS-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "libPhoneNumber-iOS-iOS8.3-dummy.m"; path = "../libPhoneNumber-iOS-iOS8.3/libPhoneNumber-iOS-iOS8.3-dummy.m"; sourceTree = "<group>"; };
 		6D16D2EF4FC94999B0D89F2EFC279E07 /* OCPartialMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCPartialMockObject.h; path = Source/OCMock/OCPartialMockObject.h; sourceTree = "<group>"; };
 		6D906A0F73D2246954AA0A09DD9443F9 /* NSObject+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+OCMAdditions.h"; path = "Source/OCMock/NSObject+OCMAdditions.h"; sourceTree = "<group>"; };
+		6DDD5E573AA5FD44E763DA06D7FB76D6 /* Ohana-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ohana-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
 		6DE2E95D0FFE9ECD8E69ACB551DAB27E /* NSValue+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+OCMAdditions.m"; path = "Source/OCMock/NSValue+OCMAdditions.m"; sourceTree = "<group>"; };
+		6DE3D55C7E3E09E56365EF063D6B924B /* Pods_OhanaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2159D8F687B9E90AAAFA00FE014E57 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0C3BB960FF3FE0387B048AE23E658C /* OHCNContactsDataProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHCNContactsDataProvider.h; sourceTree = "<group>"; };
 		6F65741417ACF6711C5754C4FDAFDC2C /* OHCNContactsDataProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHCNContactsDataProvider.m; sourceTree = "<group>"; };
 		765EDCFA7BAF933010A8AFB0D4F6BCF0 /* OCMLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMLocation.m; path = Source/OCMock/OCMLocation.m; sourceTree = "<group>"; };
+		770B967003CAE866631CFB31DD602623 /* Ohana-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Ohana-iOS8.3.xcconfig"; path = "../Ohana-iOS8.3/Ohana-iOS8.3.xcconfig"; sourceTree = "<group>"; };
+		7797D19F2D2753BF28755730A39B4700 /* libPhoneNumber-iOS-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "libPhoneNumber-iOS-iOS8.0.modulemap"; sourceTree = "<group>"; };
 		77FE209FB113AC681A87E50597266BA3 /* Pods-OhanaExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OhanaExample-frameworks.sh"; sourceTree = "<group>"; };
 		78759A78C038F65BEE2954FE2CFA1FF8 /* OCMInvocationMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationMatcher.m; path = Source/OCMock/OCMInvocationMatcher.m; sourceTree = "<group>"; };
 		7B03C3B66A3E32AF7D70EFD9030E166C /* OHStatisticsPostProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHStatisticsPostProcessor.h; sourceTree = "<group>"; };
@@ -469,18 +474,21 @@
 		7C1687FC16E61F34B62A1FF180DCCDA4 /* NBPhoneNumberDesc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumberDesc.m; path = libPhoneNumber/NBPhoneNumberDesc.m; sourceTree = "<group>"; };
 		7E7ADD6FB573B0F72E47B2F0DA86CF4B /* NBPhoneNumberUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumberUtil.m; path = libPhoneNumber/NBPhoneNumberUtil.m; sourceTree = "<group>"; };
 		7F0266CAE17E10BE729295C995037E0A /* OCMArgAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMArgAction.h; path = Source/OCMock/OCMArgAction.h; sourceTree = "<group>"; };
-		81ED18F7FA7A4B194FB052ABAF93EB09 /* UberSignals-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UberSignals-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
+		7F338A5253A6B93A44DEDEF8BC5EFF9C /* Ohana-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ohana-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
 		8205064FE1F890CEF6C8783C5A103FAD /* NBAsYouTypeFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBAsYouTypeFormatter.h; path = libPhoneNumber/NBAsYouTypeFormatter.h; sourceTree = "<group>"; };
 		8222207C4F6504A3D90AA65DCA81EE4E /* OHCompositeOrPostProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHCompositeOrPostProcessor.m; sourceTree = "<group>"; };
 		82B725BD5B3D95781C88B331E8911E7D /* NSObject+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+OCMAdditions.m"; path = "Source/OCMock/NSObject+OCMAdditions.m"; sourceTree = "<group>"; };
 		82FAAA37975F145ED4CCFE8098EAB803 /* Pods-OhanaExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OhanaExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		843763CAAA4AC97E4CBCD3AEBF6FE95F /* UberSignals-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "UberSignals-iOS8.3.xcconfig"; path = "../UberSignals-iOS8.3/UberSignals-iOS8.3.xcconfig"; sourceTree = "<group>"; };
 		849BC876EE9E24CF963B2723DA2A5091 /* OCMArg.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMArg.m; path = Source/OCMock/OCMArg.m; sourceTree = "<group>"; };
 		84A4089B62E4CF848FD989BA95F6749D /* OCMNotificationPoster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMNotificationPoster.h; path = Source/OCMock/OCMNotificationPoster.h; sourceTree = "<group>"; };
+		859964242C270EB1FF3892E2DACDD126 /* UberSignals-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UberSignals-iOS8.3-prefix.pch"; path = "../UberSignals-iOS8.3/UberSignals-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
 		8744BE3117657C7D0A6B26A0BC37E71C /* OHRequiredFieldSelectionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHRequiredFieldSelectionFilter.m; sourceTree = "<group>"; };
 		87B1721591678AE0E308FD8D7E4C3328 /* OHContactsPostProcessorProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHContactsPostProcessorProtocol.m; sourceTree = "<group>"; };
 		8860D3898C0F5DBD9586DDEFDEE94478 /* OCMNotificationPoster.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMNotificationPoster.m; path = Source/OCMock/OCMNotificationPoster.m; sourceTree = "<group>"; };
+		8867BE0EB84C7245F43D5DCDA58BEF54 /* Ohana-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Ohana-iOS8.3-dummy.m"; path = "../Ohana-iOS8.3/Ohana-iOS8.3-dummy.m"; sourceTree = "<group>"; };
+		8895AF5CD97B5116A69EE2F092FD4897 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../libPhoneNumber-iOS-iOS8.3/Info.plist"; sourceTree = "<group>"; };
 		88F55DB81F3790FB80CC46FFB415FDD6 /* UBBaseSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UBBaseSignal.m; path = UberSignals/UBBaseSignal.m; sourceTree = "<group>"; };
-		8A0EC537B12D7D5B9C4939669602CAEC /* UberSignals-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "UberSignals-iOS8.3.modulemap"; path = "../UberSignals-iOS8.3/UberSignals-iOS8.3.modulemap"; sourceTree = "<group>"; };
 		8A5320A2089C9A6AE00249FA602F5F52 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
 		8A57C8A1BA3ABBFCDA52EDC796943E9C /* UBSignal+Preprocessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UBSignal+Preprocessor.h"; path = "UberSignals/UBSignal+Preprocessor.h"; sourceTree = "<group>"; };
 		8AC289A1D26B6CAEC219ACBEE5F9DBFD /* Pods-OhanaExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OhanaExample-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -490,46 +498,42 @@
 		8B3B7E9611BA649292EF5F301C7AD620 /* OHCompositeXorPostProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHCompositeXorPostProcessor.h; sourceTree = "<group>"; };
 		8C1F1D93CBD99A3965C79747FCDD3769 /* NSMethodSignature+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+OCMAdditions.h"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.h"; sourceTree = "<group>"; };
 		8D52E85279649D3E0A59B50D78AA94D0 /* OCMConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMConstraint.m; path = Source/OCMock/OCMConstraint.m; sourceTree = "<group>"; };
+		8E591700AFA10CA0E1B3CC6FFDE0A68B /* UberSignals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UberSignals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA6F9880C34DCB43DD3D2334A1068AB /* NBMetadataCoreTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCoreTest.m; path = libPhoneNumber/NBMetadataCoreTest.m; sourceTree = "<group>"; };
 		904491A5651D9AA43F7F77CA44BA01E5 /* OCProtocolMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCProtocolMockObject.m; path = Source/OCMock/OCProtocolMockObject.m; sourceTree = "<group>"; };
 		9131445676DEC800D18BF38610A17E7A /* Pods-OhanaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OhanaExample.release.xcconfig"; sourceTree = "<group>"; };
 		9203627080DE1CD41898D8AF9ED3BAAD /* Pods-OhanaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OhanaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9262FA1EA6A7C9F309B40B06270464DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95882CDB30F6DE8BB7182052963DE11F /* Pods_OhanaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9829BA6709751F506526E31E63EB9554 /* libPhoneNumber-iOS-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "libPhoneNumber-iOS-iOS8.3-umbrella.h"; path = "../libPhoneNumber-iOS-iOS8.3/libPhoneNumber-iOS-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
 		984FCC31C6F2DBE2C95C9D83F95A7472 /* OHContactField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHContactField.m; sourceTree = "<group>"; };
 		98BE02879F18F8854DEFD9920B8DA41C /* OCMFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMFunctions.m; path = Source/OCMock/OCMFunctions.m; sourceTree = "<group>"; };
+		998D9F92DD19D6AA5343F1FBD49A95B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999C54F3CBD3FB7226C1609693DFC10A /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		99AF20CBD3E7FB5623D849E0DADD6EFF /* Pods-OhanaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OhanaTests-dummy.m"; sourceTree = "<group>"; };
 		99F1EEACEB739EBA686691E3C8514AB7 /* OCMBlockCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBlockCaller.h; path = Source/OCMock/OCMBlockCaller.h; sourceTree = "<group>"; };
-		9B1BD50B7AA55FCA7F7F4570904C00A3 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B63DDBC4F1CEE9173B0D046240BAEB6 /* UBSignalObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UBSignalObserver.h; path = UberSignals/UBSignalObserver.h; sourceTree = "<group>"; };
 		9BE6DF51C45458FDD228D30EDA2770E2 /* OHMinimumSelectedCountSelectionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHMinimumSelectedCountSelectionFilter.m; sourceTree = "<group>"; };
 		9CA45488F88CF3A47B93411EB9EF757E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CB6E92EB8062849A6A7CA25A3892214 /* OCMBlockArgCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockArgCaller.m; path = Source/OCMock/OCMBlockArgCaller.m; sourceTree = "<group>"; };
 		9D0F69BF901BF9D2CA6F6DB4BA175790 /* OCMFunctionsPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMFunctionsPrivate.h; path = Source/OCMock/OCMFunctionsPrivate.h; sourceTree = "<group>"; };
+		9D2F117462A1848E7564CFFC39A853D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Ohana-iOS8.3/Info.plist"; sourceTree = "<group>"; };
 		9ED2BA1ED2B7CC7961F7BD18D4C29515 /* NBMetadataCoreTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataCoreTest.h; path = libPhoneNumber/NBMetadataCoreTest.h; sourceTree = "<group>"; };
 		9F273AA63F5CC56E3BC83AA181A0822F /* OHPhoneNumberFormattingPostProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHPhoneNumberFormattingPostProcessor.m; sourceTree = "<group>"; };
-		9FC952D015BEBA1AB8834CC9A8E2FCE1 /* libPhoneNumber-iOS-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "libPhoneNumber-iOS-iOS8.3.xcconfig"; path = "../libPhoneNumber-iOS-iOS8.3/libPhoneNumber-iOS-iOS8.3.xcconfig"; sourceTree = "<group>"; };
+		A2932A57B266A9454F781C3E9F317185 /* libPhoneNumber-iOS-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libPhoneNumber-iOS-iOS8.0-dummy.m"; sourceTree = "<group>"; };
+		A335C61C2A20EE4547B2BBD9106AEF5C /* libPhoneNumber-iOS-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libPhoneNumber-iOS-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
 		A336B4063D8E325348ED5ECD8C4B43F9 /* OHContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHContact.h; sourceTree = "<group>"; };
-		A6C86147B733C097AC857752BBA2A91F /* Ohana-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Ohana-iOS8.3.xcconfig"; path = "../Ohana-iOS8.3/Ohana-iOS8.3.xcconfig"; sourceTree = "<group>"; };
 		A7EAF3113F1623B232C0009FEECAEFB7 /* OCMInvocationStub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationStub.m; path = Source/OCMock/OCMInvocationStub.m; sourceTree = "<group>"; };
-		A97352A00EA1E40C133B28727F469A29 /* Ohana-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Ohana-iOS8.3.modulemap"; path = "../Ohana-iOS8.3/Ohana-iOS8.3.modulemap"; sourceTree = "<group>"; };
-		A974C1DB89AF93821343B6BC818D7D20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../UberSignals-iOS8.3/Info.plist"; sourceTree = "<group>"; };
 		A9766186D619F747BF4B7F27F201E624 /* OCMock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMock-prefix.pch"; sourceTree = "<group>"; };
 		ABF6232462909550FC5A919C0CC5BF27 /* OCMPassByRefSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMPassByRefSetter.m; path = Source/OCMock/OCMPassByRefSetter.m; sourceTree = "<group>"; };
-		AC44B9152CCFACFE001F6B47DBEB5353 /* UberSignals-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UberSignals-iOS8.0-dummy.m"; sourceTree = "<group>"; };
 		ACC170C911A99C5A65A6F52C35C6B5FB /* OCMIndirectReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMIndirectReturnValueProvider.m; path = Source/OCMock/OCMIndirectReturnValueProvider.m; sourceTree = "<group>"; };
 		AEF7070892FFE6B5178141FED3616A79 /* OHContactsDataProviderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHContactsDataProviderProtocol.h; sourceTree = "<group>"; };
 		AF079A4882B20BA9A60AD0F671E96CF7 /* OHRequiredFieldPostProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHRequiredFieldPostProcessor.h; sourceTree = "<group>"; };
-		AFBC6E976D48E94F06635213B3D3581C /* Ohana-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ohana-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
 		B2566765FB944EB9EB134FCC7FE761EA /* OCPartialMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCPartialMockObject.m; path = Source/OCMock/OCPartialMockObject.m; sourceTree = "<group>"; };
 		B3FAAB62E1D7335EB346128C654F6D61 /* NBPhoneNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumber.m; path = libPhoneNumber/NBPhoneNumber.m; sourceTree = "<group>"; };
 		B5BBA7347003A9412082D238A6DED118 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		B5F021BFF18D29AEB021F50952F3B359 /* OHFuzzyMatchingUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHFuzzyMatchingUtility.h; sourceTree = "<group>"; };
 		B6819C043518484FB16788EF465AB222 /* OHContactAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHContactAddress.m; sourceTree = "<group>"; };
 		B6DA99581BAC21B5E022222FB3840902 /* OhanaUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OhanaUtilities.h; sourceTree = "<group>"; };
-		B79119F59ED661A2E454206CA0CAFEB5 /* UberSignals-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UberSignals-iOS8.3-umbrella.h"; path = "../UberSignals-iOS8.3/UberSignals-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
 		B8B187587FBAB351FEC7F3A70B6FCB94 /* OCMArg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMArg.h; path = Source/OCMock/OCMArg.h; sourceTree = "<group>"; };
 		B8DD4499846468EF2C627CCEC8FB011A /* Pods-OhanaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OhanaTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA55815E11BF09744C8E685E7559CE08 /* OHRequiredPostalAddressPostProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHRequiredPostalAddressPostProcessor.m; sourceTree = "<group>"; };
@@ -539,34 +543,28 @@
 		C2D82ADC0034FBFEE129BD17A5EC916C /* OCMExceptionReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMExceptionReturnValueProvider.m; path = Source/OCMock/OCMExceptionReturnValueProvider.m; sourceTree = "<group>"; };
 		C3771C917ABEA5A463077DF4AEF78944 /* OHContactAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHContactAddress.h; sourceTree = "<group>"; };
 		C3A241CD813ACCD4CE77F164A09A0103 /* OCMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = Source/OCMock/OCMock.h; sourceTree = "<group>"; };
-		C5FBBD46814D8B2380E351AF479FF34A /* UberSignals-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UberSignals-iOS8.0.modulemap"; sourceTree = "<group>"; };
 		C609C063B43F78427F136A37A09871F9 /* OCMPassByRefSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMPassByRefSetter.h; path = Source/OCMock/OCMPassByRefSetter.h; sourceTree = "<group>"; };
+		C6C27CC733D2FD64104C4A30317C9ACF /* Ohana-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Ohana-iOS8.3-umbrella.h"; path = "../Ohana-iOS8.3/Ohana-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
 		C7482413518E6C4A0AFBDB1233F7B9FB /* Pods-OhanaExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OhanaExample-resources.sh"; sourceTree = "<group>"; };
 		C7DC019A7834861AAAA75A970A620358 /* OCMObserverRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMObserverRecorder.h; path = Source/OCMock/OCMObserverRecorder.h; sourceTree = "<group>"; };
 		C8A9441D450F166D32F402342386F514 /* OCMock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCMock-dummy.m"; sourceTree = "<group>"; };
-		C95D324A6B7374C67C1D837A99CBAEC8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8E9BC6D624EAD642E618D1E029E06E4 /* UberSignals-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UberSignals-iOS8.0-dummy.m"; sourceTree = "<group>"; };
 		C9A5AE7E10B8C5DAC632FF2035C40841 /* NBMetadataHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataHelper.h; path = libPhoneNumber/NBMetadataHelper.h; sourceTree = "<group>"; };
 		C9CA2D76669037C5C9C6C3A28D4B4D7A /* UBSignalObserver+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UBSignalObserver+Internal.h"; path = "UberSignals/UBSignalObserver+Internal.h"; sourceTree = "<group>"; };
-		CAD25F09A41B18ACE905A84AC54C1E0E /* libPhoneNumber-iOS-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "libPhoneNumber-iOS-iOS8.0.xcconfig"; sourceTree = "<group>"; };
-		CC5B61BEBC0D268CACBEA34913AA5515 /* Pods_OhanaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCEF66F91D12AC04662DD2694B879FCD /* UberSignals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UberSignals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC8FC3415F4C2FAD51A590F6E07E6EB /* NSMethodSignature+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+OCMAdditions.m"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.m"; sourceTree = "<group>"; };
 		CFBBD49767C3C1DC9F5FF456260FAF64 /* OCMFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMFunctions.h; path = Source/OCMock/OCMFunctions.h; sourceTree = "<group>"; };
 		D1A1910724179DAA834E249E9620217C /* OHAlphabeticalSortPostProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHAlphabeticalSortPostProcessor.h; sourceTree = "<group>"; };
+		D2EFA4D5FFB3796586DDC4D00B1A4461 /* libPhoneNumber_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libPhoneNumber_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FFB9B4B7927B4C825CC06023B97621 /* OCMInvocationStub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationStub.h; path = Source/OCMock/OCMInvocationStub.h; sourceTree = "<group>"; };
-		D5A2F2F94B10A2BA3FABC9E06FDA6755 /* libPhoneNumber-iOS-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libPhoneNumber-iOS-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
-		D5A4F2AFE0DA1AE410B6C4752B1E3360 /* UberSignals-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UberSignals-iOS8.3-prefix.pch"; path = "../UberSignals-iOS8.3/UberSignals-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
-		D852D9BEF5CF6A0A04DE64F739DF55B0 /* UberSignals-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UberSignals-iOS8.3-dummy.m"; path = "../UberSignals-iOS8.3/UberSignals-iOS8.3-dummy.m"; sourceTree = "<group>"; };
 		D892CBF3EF620F44206FBD3ED1A9DB80 /* OHContactField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHContactField.h; sourceTree = "<group>"; };
 		D93667C2CB5A406CB7FBFC7CD1EFAB9E /* OHStatisticsPostProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHStatisticsPostProcessor.m; sourceTree = "<group>"; };
-		DA433827CF864A88648917E17AAFB436 /* UberSignals-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UberSignals-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
 		DAD00045782505ED01D01647C2B26F75 /* OHCompositeAndPostProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHCompositeAndPostProcessor.h; sourceTree = "<group>"; };
 		DB757E9C54074C0519110C3654BA35EC /* NBAsYouTypeFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBAsYouTypeFormatter.m; path = libPhoneNumber/NBAsYouTypeFormatter.m; sourceTree = "<group>"; };
 		DB854D552BC93C05804EB55D14F4CF25 /* OHSplitOnFieldTypePostProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHSplitOnFieldTypePostProcessor.h; sourceTree = "<group>"; };
 		DE5D706C2283447927E8D60EEAE2E26F /* OCMExceptionReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMExceptionReturnValueProvider.h; path = Source/OCMock/OCMExceptionReturnValueProvider.h; sourceTree = "<group>"; };
 		E034B70F9F48FF149DC738EEF4BFFC6A /* Pods-OhanaExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OhanaExample-umbrella.h"; sourceTree = "<group>"; };
 		E0368BDAF6ABCE65FCDD6FB49D3B49AC /* NBPhoneNumberDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumberDefines.h; path = libPhoneNumber/NBPhoneNumberDefines.h; sourceTree = "<group>"; };
-		E1D72B86EAB667CB4CCB3B2B1AF32FEA /* libPhoneNumber-iOS-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libPhoneNumber-iOS-iOS8.0-dummy.m"; sourceTree = "<group>"; };
+		E1BE2726D52E52D6D90D6AB79BCF9656 /* libPhoneNumber-iOS-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "libPhoneNumber-iOS-iOS8.0.xcconfig"; sourceTree = "<group>"; };
 		E4A70533A4EA241928CBD1020C681FB2 /* NBPhoneNumberUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumberUtil.h; path = libPhoneNumber/NBPhoneNumberUtil.h; sourceTree = "<group>"; };
 		E68C2FAD219A05F0A5B898D4AF33BE1E /* OHContactsDataProviderProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHContactsDataProviderProtocol.m; sourceTree = "<group>"; };
 		E6AAA78E11F9E97BD854CFA4A35DDD59 /* OCMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = Source/OCMock/OCMockObject.h; sourceTree = "<group>"; };
@@ -574,7 +572,6 @@
 		E888E5629AB189B6D66CF4971273DB73 /* Pods-OhanaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OhanaTests-frameworks.sh"; sourceTree = "<group>"; };
 		E8E805F6826AAA69B90BBB16336A8226 /* UBSignalObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UBSignalObserver.m; path = UberSignals/UBSignalObserver.m; sourceTree = "<group>"; };
 		E968DF7153B17F9F45895E739B979AE5 /* NSInvocation+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+OCMAdditions.h"; path = "Source/OCMock/NSInvocation+OCMAdditions.h"; sourceTree = "<group>"; };
-		E9B286AE2EC91D065C802C51B070C0BD /* libPhoneNumber-iOS-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libPhoneNumber-iOS-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
 		EA0E537F888E948EB252726848FA51E7 /* NBMetadataCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCore.m; path = libPhoneNumber/NBMetadataCore.m; sourceTree = "<group>"; };
 		EA2A138BC3A09DC3F900A113018DC407 /* NBPhoneMetaData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneMetaData.h; path = libPhoneNumber/NBPhoneMetaData.h; sourceTree = "<group>"; };
 		ECE277DEE73B74ECC658DAF92E6FB103 /* OCMVerifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMVerifier.m; path = Source/OCMock/OCMVerifier.m; sourceTree = "<group>"; };
@@ -582,12 +579,15 @@
 		EE5DF682710E968A8AE6885C21108F46 /* NBMetadataHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataHelper.m; path = libPhoneNumber/NBMetadataHelper.m; sourceTree = "<group>"; };
 		EF898BBF3E9927EEF701BC516EE093C0 /* UberSignals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UberSignals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF975B609475A6443F0F1EAC40DFBE38 /* OCMBoxedReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBoxedReturnValueProvider.h; path = Source/OCMock/OCMBoxedReturnValueProvider.h; sourceTree = "<group>"; };
+		EFDA35EE105D19537D605E813720D3DA /* libPhoneNumber-iOS-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "libPhoneNumber-iOS-iOS8.3.xcconfig"; path = "../libPhoneNumber-iOS-iOS8.3/libPhoneNumber-iOS-iOS8.3.xcconfig"; sourceTree = "<group>"; };
 		F3414B72AC96A3EAA5882C661ED0BB60 /* OCMock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OCMock.modulemap; sourceTree = "<group>"; };
 		F4CC77D18283A7735D76DD070CFA0403 /* Pods-OhanaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OhanaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5B48444B54EB73CD3F6FA4C311576FE /* OHFuzzyMatchingUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHFuzzyMatchingUtility.m; sourceTree = "<group>"; };
+		F5CF953F46CBAFB69B5D773EF1385A3D /* UberSignals-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UberSignals-iOS8.3-umbrella.h"; path = "../UberSignals-iOS8.3/UberSignals-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
 		F81F654728A44C21CC3CD6880871E87D /* OHRequiredFieldPostProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHRequiredFieldPostProcessor.m; sourceTree = "<group>"; };
-		FB1BDBE812ACF9E593DDE63EE73F5344 /* libPhoneNumber-iOS-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "libPhoneNumber-iOS-iOS8.3-umbrella.h"; path = "../libPhoneNumber-iOS-iOS8.3/libPhoneNumber-iOS-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
+		FA45CE04C5ED1433C8E3889EB3925C3E /* Ohana-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Ohana-iOS8.0.xcconfig"; sourceTree = "<group>"; };
 		FBB3908C62A7B7ABA6CDC23BCAF2B8A3 /* OCMRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMRecorder.m; path = Source/OCMock/OCMRecorder.m; sourceTree = "<group>"; };
+		FCDDA00D375542251F4AAB1A62B4716F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../UberSignals-iOS8.3/Info.plist"; sourceTree = "<group>"; };
 		FEAE17A289B1EB2ACD70B66EEBD540E2 /* OHMinimumSelectedCountSelectionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OHMinimumSelectedCountSelectionFilter.h; sourceTree = "<group>"; };
 		FF56FBF3C6FDBC4AC264111F9A6E1757 /* OCMock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMock-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -691,22 +691,6 @@
 			path = Composite;
 			sourceTree = "<group>";
 		};
-		11131135CE1DAF1B673D68BFA1EED524 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4A7557AF2D852306C5B1FF55857C9899 /* libPhoneNumber_iOS.framework */,
-				3CC31FDCB37F8DB67CCE051ECA2BE958 /* libPhoneNumber_iOS.framework */,
-				9B1BD50B7AA55FCA7F7F4570904C00A3 /* OCMock.framework */,
-				05C85596D7345368534716D76C4A25EF /* Ohana.framework */,
-				67467A548012826F677B5748D4E870F0 /* Ohana.framework */,
-				CC5B61BEBC0D268CACBEA34913AA5515 /* Pods_OhanaExample.framework */,
-				95882CDB30F6DE8BB7182052963DE11F /* Pods_OhanaTests.framework */,
-				CCEF66F91D12AC04662DD2694B879FCD /* UberSignals.framework */,
-				54B3AFD4CB2BFF4198317297EDA9574B /* UberSignals.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		15C0E5EE3F36E7F26733FBC39C2E1E33 /* Pods-OhanaExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -736,24 +720,24 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		1B1B4BBEBAF72999443E65D51AE0A73A /* Support Files */ = {
+		2D23EFDB57EF3C095F27B64A8440D762 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A974C1DB89AF93821343B6BC818D7D20 /* Info.plist */,
-				C95D324A6B7374C67C1D837A99CBAEC8 /* Info.plist */,
-				C5FBBD46814D8B2380E351AF479FF34A /* UberSignals-iOS8.0.modulemap */,
-				1A4082BA4EEBD9B0F5B1E61D5B7A7E32 /* UberSignals-iOS8.0.xcconfig */,
-				AC44B9152CCFACFE001F6B47DBEB5353 /* UberSignals-iOS8.0-dummy.m */,
-				81ED18F7FA7A4B194FB052ABAF93EB09 /* UberSignals-iOS8.0-prefix.pch */,
-				DA433827CF864A88648917E17AAFB436 /* UberSignals-iOS8.0-umbrella.h */,
-				8A0EC537B12D7D5B9C4939669602CAEC /* UberSignals-iOS8.3.modulemap */,
-				2B2C5928D06B3B92BEA082D5B2B90FC0 /* UberSignals-iOS8.3.xcconfig */,
-				D852D9BEF5CF6A0A04DE64F739DF55B0 /* UberSignals-iOS8.3-dummy.m */,
-				D5A4F2AFE0DA1AE410B6C4752B1E3360 /* UberSignals-iOS8.3-prefix.pch */,
-				B79119F59ED661A2E454206CA0CAFEB5 /* UberSignals-iOS8.3-umbrella.h */,
+				287C5C87756075C7797BE2BAF012ACA1 /* Info.plist */,
+				8895AF5CD97B5116A69EE2F092FD4897 /* Info.plist */,
+				7797D19F2D2753BF28755730A39B4700 /* libPhoneNumber-iOS-iOS8.0.modulemap */,
+				E1BE2726D52E52D6D90D6AB79BCF9656 /* libPhoneNumber-iOS-iOS8.0.xcconfig */,
+				A2932A57B266A9454F781C3E9F317185 /* libPhoneNumber-iOS-iOS8.0-dummy.m */,
+				08419A5EE9AC3C8117AA4348F4972874 /* libPhoneNumber-iOS-iOS8.0-prefix.pch */,
+				A335C61C2A20EE4547B2BBD9106AEF5C /* libPhoneNumber-iOS-iOS8.0-umbrella.h */,
+				0C83EE21050FF1FBDE1032C5BE93F2E2 /* libPhoneNumber-iOS-iOS8.3.modulemap */,
+				EFDA35EE105D19537D605E813720D3DA /* libPhoneNumber-iOS-iOS8.3.xcconfig */,
+				6CE59211249DC8B6A001D31A6AA603A0 /* libPhoneNumber-iOS-iOS8.3-dummy.m */,
+				0B447256874C25517D626EF4830F7599 /* libPhoneNumber-iOS-iOS8.3-prefix.pch */,
+				9829BA6709751F506526E31E63EB9554 /* libPhoneNumber-iOS-iOS8.3-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/UberSignals-iOS8.0";
+			path = "../Target Support Files/libPhoneNumber-iOS-iOS8.0";
 			sourceTree = "<group>";
 		};
 		320C02ABEB209A0AED3A3AF9DE263A42 /* libPhoneNumber-iOS */ = {
@@ -783,7 +767,7 @@
 				7C1687FC16E61F34B62A1FF180DCCDA4 /* NBPhoneNumberDesc.m */,
 				E4A70533A4EA241928CBD1020C681FB2 /* NBPhoneNumberUtil.h */,
 				7E7ADD6FB573B0F72E47B2F0DA86CF4B /* NBPhoneNumberUtil.m */,
-				A6C395368D8B37D527A1C542019181E0 /* Support Files */,
+				2D23EFDB57EF3C095F27B64A8440D762 /* Support Files */,
 			);
 			path = "libPhoneNumber-iOS";
 			sourceTree = "<group>";
@@ -841,7 +825,7 @@
 				B1CF91D9D935AE7A76F50CB9E3AC5305 /* Development Pods */,
 				A2273FA928DB55E3646334E7771303EF /* Frameworks */,
 				EF3DD1C87CE32CE8DCEA92D7476B84AF /* Pods */,
-				11131135CE1DAF1B673D68BFA1EED524 /* Products */,
+				D051B4194AEDDAB1322D38154215D10B /* Products */,
 				FC4CC778F9B02EA511EDC458CC2E3774 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -932,26 +916,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A6C395368D8B37D527A1C542019181E0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2547DD32AA554781C1E0F65555A25E99 /* Info.plist */,
-				9262FA1EA6A7C9F309B40B06270464DF /* Info.plist */,
-				365AEBF61B6EB23AA5E78D502A7B2579 /* libPhoneNumber-iOS-iOS8.0.modulemap */,
-				CAD25F09A41B18ACE905A84AC54C1E0E /* libPhoneNumber-iOS-iOS8.0.xcconfig */,
-				E1D72B86EAB667CB4CCB3B2B1AF32FEA /* libPhoneNumber-iOS-iOS8.0-dummy.m */,
-				D5A2F2F94B10A2BA3FABC9E06FDA6755 /* libPhoneNumber-iOS-iOS8.0-prefix.pch */,
-				E9B286AE2EC91D065C802C51B070C0BD /* libPhoneNumber-iOS-iOS8.0-umbrella.h */,
-				6B42BB69582FE4111391C3D59FA50C83 /* libPhoneNumber-iOS-iOS8.3.modulemap */,
-				9FC952D015BEBA1AB8834CC9A8E2FCE1 /* libPhoneNumber-iOS-iOS8.3.xcconfig */,
-				2D69E301A8B6777927CBC948561E3EF2 /* libPhoneNumber-iOS-iOS8.3-dummy.m */,
-				30AE503E7B095ABD032FC0F00742DB86 /* libPhoneNumber-iOS-iOS8.3-prefix.pch */,
-				FB1BDBE812ACF9E593DDE63EE73F5344 /* libPhoneNumber-iOS-iOS8.3-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/libPhoneNumber-iOS-iOS8.0";
-			sourceTree = "<group>";
-		};
 		A95C84395ECD9393F41BC39D9356DAB2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -1013,6 +977,22 @@
 			path = Ohana;
 			sourceTree = "<group>";
 		};
+		D051B4194AEDDAB1322D38154215D10B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2EFA4D5FFB3796586DDC4D00B1A4461 /* libPhoneNumber_iOS.framework */,
+				1315F6F372C87E7E7145F445666DF7B1 /* libPhoneNumber_iOS.framework */,
+				6E2159D8F687B9E90AAAFA00FE014E57 /* OCMock.framework */,
+				5447F8F4A8CA2187AECF6AAABE657839 /* Ohana.framework */,
+				5CE63231688A97F97238814CD535C3CA /* Ohana.framework */,
+				6DE3D55C7E3E09E56365EF063D6B924B /* Pods_OhanaExample.framework */,
+				6C9E1098532A6C652E0C61710E5AC6FB /* Pods_OhanaTests.framework */,
+				8E591700AFA10CA0E1B3CC6FFDE0A68B /* UberSignals.framework */,
+				1A88724B88C7A515CC3AEE0A073477A4 /* UberSignals.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D3C6415155B9A167EFC35C4F7CE83BA4 /* Pods-OhanaTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1031,24 +1011,24 @@
 			path = "Target Support Files/Pods-OhanaTests";
 			sourceTree = "<group>";
 		};
-		D9532BFA2C15A262B6EA2CC0F836FE79 /* Support Files */ = {
+		D8A36F940AB933FAC9C90A4CA3FAAD1F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0FC0E898D0D62FD36AA3E6367FB80E58 /* Info.plist */,
-				6872DB5884E67ACE48A816AA4309B876 /* Info.plist */,
-				3B55A411EE39332A967E687F84C68710 /* Ohana-iOS8.0.modulemap */,
-				25A4A9D08FD1AFB5BD0238C59FA24F0F /* Ohana-iOS8.0.xcconfig */,
-				641C8B75C8073748FF890A20FACC135D /* Ohana-iOS8.0-dummy.m */,
-				64B8E831D9D53B01FE4C807EAFFBFCB1 /* Ohana-iOS8.0-prefix.pch */,
-				AFBC6E976D48E94F06635213B3D3581C /* Ohana-iOS8.0-umbrella.h */,
-				A97352A00EA1E40C133B28727F469A29 /* Ohana-iOS8.3.modulemap */,
-				A6C86147B733C097AC857752BBA2A91F /* Ohana-iOS8.3.xcconfig */,
-				383F7ADE971989ABC6E9DA6BC1A60AB7 /* Ohana-iOS8.3-dummy.m */,
-				3A2D46432CC3B4517B07DFE0531865E0 /* Ohana-iOS8.3-prefix.pch */,
-				4EE7FA7A46AC3291AAB6CABA7D15ABC7 /* Ohana-iOS8.3-umbrella.h */,
+				998D9F92DD19D6AA5343F1FBD49A95B0 /* Info.plist */,
+				FCDDA00D375542251F4AAB1A62B4716F /* Info.plist */,
+				05640FF64ACDE70C2781471C6977D060 /* UberSignals-iOS8.0.modulemap */,
+				6521024C044A4821A7A6F6FD22A0F61C /* UberSignals-iOS8.0.xcconfig */,
+				C8E9BC6D624EAD642E618D1E029E06E4 /* UberSignals-iOS8.0-dummy.m */,
+				39D1D7A64B928FCDEAC613B26D6477FA /* UberSignals-iOS8.0-prefix.pch */,
+				5D4FBB0CFFC28867A3501DE6061CD937 /* UberSignals-iOS8.0-umbrella.h */,
+				2AB63571566233C529A85CA24926810C /* UberSignals-iOS8.3.modulemap */,
+				843763CAAA4AC97E4CBCD3AEBF6FE95F /* UberSignals-iOS8.3.xcconfig */,
+				6836EBB5302A29881CCA703D96EF739E /* UberSignals-iOS8.3-dummy.m */,
+				859964242C270EB1FF3892E2DACDD126 /* UberSignals-iOS8.3-prefix.pch */,
+				F5CF953F46CBAFB69B5D773EF1385A3D /* UberSignals-iOS8.3-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Ohana-iOS8.0";
+			path = "../Target Support Files/UberSignals-iOS8.0";
 			sourceTree = "<group>";
 		};
 		DF40422FCAA961E6EA5E4D081488BF0A /* Classes */ = {
@@ -1075,9 +1055,29 @@
 				9B63DDBC4F1CEE9173B0D046240BAEB6 /* UBSignalObserver.h */,
 				E8E805F6826AAA69B90BBB16336A8226 /* UBSignalObserver.m */,
 				C9CA2D76669037C5C9C6C3A28D4B4D7A /* UBSignalObserver+Internal.h */,
-				1B1B4BBEBAF72999443E65D51AE0A73A /* Support Files */,
+				D8A36F940AB933FAC9C90A4CA3FAAD1F /* Support Files */,
 			);
 			path = UberSignals;
+			sourceTree = "<group>";
+		};
+		EDD09326E2271537BC59024A5A789E14 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54E8DB78689EE5259240DBAF7C24947B /* Info.plist */,
+				9D2F117462A1848E7564CFFC39A853D5 /* Info.plist */,
+				0423AF9501A9891AF0F4CABEBEDCFFDF /* Ohana-iOS8.0.modulemap */,
+				FA45CE04C5ED1433C8E3889EB3925C3E /* Ohana-iOS8.0.xcconfig */,
+				16DE426A7950C886D46AB989099A3BAB /* Ohana-iOS8.0-dummy.m */,
+				7F338A5253A6B93A44DEDEF8BC5EFF9C /* Ohana-iOS8.0-prefix.pch */,
+				6DDD5E573AA5FD44E763DA06D7FB76D6 /* Ohana-iOS8.0-umbrella.h */,
+				31CCC63C92AB8F136FF5D644BB3A9A18 /* Ohana-iOS8.3.modulemap */,
+				770B967003CAE866631CFB31DD602623 /* Ohana-iOS8.3.xcconfig */,
+				8867BE0EB84C7245F43D5DCDA58BEF54 /* Ohana-iOS8.3-dummy.m */,
+				47CB01261BEF2B3FC400C6B092451010 /* Ohana-iOS8.3-prefix.pch */,
+				C6C27CC733D2FD64104C4A30317C9ACF /* Ohana-iOS8.3-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Ohana-iOS8.0";
 			sourceTree = "<group>";
 		};
 		EF3DD1C87CE32CE8DCEA92D7476B84AF /* Pods */ = {
@@ -1094,7 +1094,7 @@
 			isa = PBXGroup;
 			children = (
 				CF81909C4D0988AD58F68478A649EA2B /* Ohana */,
-				D9532BFA2C15A262B6EA2CC0F836FE79 /* Support Files */,
+				EDD09326E2271537BC59024A5A789E14 /* Support Files */,
 			);
 			name = Ohana;
 			path = ../..;
@@ -1343,7 +1343,7 @@
 			);
 			name = "Pods-OhanaTests";
 			productName = "Pods-OhanaTests";
-			productReference = 95882CDB30F6DE8BB7182052963DE11F /* Pods_OhanaTests.framework */;
+			productReference = 6C9E1098532A6C652E0C61710E5AC6FB /* Pods_OhanaTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		0C9D3C758CFA9888936DBEB0F9B3C74D /* OCMock */ = {
@@ -1360,7 +1360,7 @@
 			);
 			name = OCMock;
 			productName = OCMock;
-			productReference = 9B1BD50B7AA55FCA7F7F4570904C00A3 /* OCMock.framework */;
+			productReference = 6E2159D8F687B9E90AAAFA00FE014E57 /* OCMock.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3BB3586D7237483E176230641597789C /* libPhoneNumber-iOS-iOS8.0 */ = {
@@ -1377,7 +1377,7 @@
 			);
 			name = "libPhoneNumber-iOS-iOS8.0";
 			productName = "libPhoneNumber-iOS-iOS8.0";
-			productReference = 4A7557AF2D852306C5B1FF55857C9899 /* libPhoneNumber_iOS.framework */;
+			productReference = D2EFA4D5FFB3796586DDC4D00B1A4461 /* libPhoneNumber_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4B9C2B84D8D1270631A65BDE5486CDFC /* libPhoneNumber-iOS-iOS8.3 */ = {
@@ -1394,7 +1394,7 @@
 			);
 			name = "libPhoneNumber-iOS-iOS8.3";
 			productName = "libPhoneNumber-iOS-iOS8.3";
-			productReference = 3CC31FDCB37F8DB67CCE051ECA2BE958 /* libPhoneNumber_iOS.framework */;
+			productReference = 1315F6F372C87E7E7145F445666DF7B1 /* libPhoneNumber_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7A43C8C91D8B0A2F3B6F798C35E1A7F3 /* Ohana-iOS8.3 */ = {
@@ -1413,7 +1413,7 @@
 			);
 			name = "Ohana-iOS8.3";
 			productName = "Ohana-iOS8.3";
-			productReference = 05C85596D7345368534716D76C4A25EF /* Ohana.framework */;
+			productReference = 5447F8F4A8CA2187AECF6AAABE657839 /* Ohana.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8231B640E9D3C77922068681C16D3DBF /* Ohana-iOS8.0 */ = {
@@ -1432,7 +1432,7 @@
 			);
 			name = "Ohana-iOS8.0";
 			productName = "Ohana-iOS8.0";
-			productReference = 67467A548012826F677B5748D4E870F0 /* Ohana.framework */;
+			productReference = 5CE63231688A97F97238814CD535C3CA /* Ohana.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		83073F3F42968ADA4690B361F572BA42 /* Pods-OhanaExample */ = {
@@ -1452,7 +1452,7 @@
 			);
 			name = "Pods-OhanaExample";
 			productName = "Pods-OhanaExample";
-			productReference = CC5B61BEBC0D268CACBEA34913AA5515 /* Pods_OhanaExample.framework */;
+			productReference = 6DE3D55C7E3E09E56365EF063D6B924B /* Pods_OhanaExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D6C5306B71D060D63FFA6EAAF429885E /* UberSignals-iOS8.3 */ = {
@@ -1469,7 +1469,7 @@
 			);
 			name = "UberSignals-iOS8.3";
 			productName = "UberSignals-iOS8.3";
-			productReference = 54B3AFD4CB2BFF4198317297EDA9574B /* UberSignals.framework */;
+			productReference = 8E591700AFA10CA0E1B3CC6FFDE0A68B /* UberSignals.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D980A6197735CE38CF2DFE20B3306410 /* UberSignals-iOS8.0 */ = {
@@ -1486,7 +1486,7 @@
 			);
 			name = "UberSignals-iOS8.0";
 			productName = "UberSignals-iOS8.0";
-			productReference = CCEF66F91D12AC04662DD2694B879FCD /* UberSignals.framework */;
+			productReference = 1A88724B88C7A515CC3AEE0A073477A4 /* UberSignals.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1506,7 +1506,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 11131135CE1DAF1B673D68BFA1EED524 /* Products */;
+			productRefGroup = D051B4194AEDDAB1322D38154215D10B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1777,7 +1777,7 @@
 /* Begin XCBuildConfiguration section */
 		055AF69AA0B89B91321BF1E6058B2EA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FC952D015BEBA1AB8834CC9A8E2FCE1 /* libPhoneNumber-iOS-iOS8.3.xcconfig */;
+			baseConfigurationReference = EFDA35EE105D19537D605E813720D3DA /* libPhoneNumber-iOS-iOS8.3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1839,7 +1839,7 @@
 		};
 		2E58C9C61FB2D97FA91664C557F2FF1D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAD25F09A41B18ACE905A84AC54C1E0E /* libPhoneNumber-iOS-iOS8.0.xcconfig */;
+			baseConfigurationReference = E1BE2726D52E52D6D90D6AB79BCF9656 /* libPhoneNumber-iOS-iOS8.0.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1910,7 +1910,7 @@
 		};
 		4927D6A74DA61F74E102F9599C82C20A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A4082BA4EEBD9B0F5B1E61D5B7A7E32 /* UberSignals-iOS8.0.xcconfig */;
+			baseConfigurationReference = 6521024C044A4821A7A6F6FD22A0F61C /* UberSignals-iOS8.0.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1939,7 +1939,7 @@
 		};
 		65C1F5DB98DD5417750941C20A8EF61C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6C86147B733C097AC857752BBA2A91F /* Ohana-iOS8.3.xcconfig */;
+			baseConfigurationReference = 770B967003CAE866631CFB31DD602623 /* Ohana-iOS8.3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1968,7 +1968,7 @@
 		};
 		68053AECA6C7FE6527D534E45A278854 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FC952D015BEBA1AB8834CC9A8E2FCE1 /* libPhoneNumber-iOS-iOS8.3.xcconfig */;
+			baseConfigurationReference = EFDA35EE105D19537D605E813720D3DA /* libPhoneNumber-iOS-iOS8.3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2026,7 +2026,7 @@
 		};
 		76AED5AB1ED81A886DD9E7D2ED512052 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAD25F09A41B18ACE905A84AC54C1E0E /* libPhoneNumber-iOS-iOS8.0.xcconfig */;
+			baseConfigurationReference = E1BE2726D52E52D6D90D6AB79BCF9656 /* libPhoneNumber-iOS-iOS8.0.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2055,7 +2055,7 @@
 		};
 		79B3FDA7B2B15E179BC775165A65D086 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A4082BA4EEBD9B0F5B1E61D5B7A7E32 /* UberSignals-iOS8.0.xcconfig */;
+			baseConfigurationReference = 6521024C044A4821A7A6F6FD22A0F61C /* UberSignals-iOS8.0.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2084,7 +2084,7 @@
 		};
 		80401B359AACC17CB31F1541E8DCE74B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25A4A9D08FD1AFB5BD0238C59FA24F0F /* Ohana-iOS8.0.xcconfig */;
+			baseConfigurationReference = FA45CE04C5ED1433C8E3889EB3925C3E /* Ohana-iOS8.0.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2142,7 +2142,7 @@
 		};
 		8D4B5679E326099128D12B42484FC922 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B2C5928D06B3B92BEA082D5B2B90FC0 /* UberSignals-iOS8.3.xcconfig */;
+			baseConfigurationReference = 843763CAAA4AC97E4CBCD3AEBF6FE95F /* UberSignals-iOS8.3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2171,7 +2171,7 @@
 		};
 		9531B65775049EAF131F395FDD48EAAC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B2C5928D06B3B92BEA082D5B2B90FC0 /* UberSignals-iOS8.3.xcconfig */;
+			baseConfigurationReference = 843763CAAA4AC97E4CBCD3AEBF6FE95F /* UberSignals-iOS8.3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2337,7 +2337,7 @@
 		};
 		C9D344F14D2BB2C5BAF1FE32C360328F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25A4A9D08FD1AFB5BD0238C59FA24F0F /* Ohana-iOS8.0.xcconfig */;
+			baseConfigurationReference = FA45CE04C5ED1433C8E3889EB3925C3E /* Ohana-iOS8.0.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2366,7 +2366,7 @@
 		};
 		FD4755264E6B1DC467F960B8B7D164FE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6C86147B733C097AC857752BBA2A91F /* Ohana-iOS8.3.xcconfig */;
+			baseConfigurationReference = 770B967003CAE866631CFB31DD602623 /* Ohana-iOS8.3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

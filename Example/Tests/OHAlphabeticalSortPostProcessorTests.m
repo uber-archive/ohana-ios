@@ -36,6 +36,12 @@
 @property (nonatomic) OHContact *contactC;
 @property (nonatomic) OHContact *contactD;
 
+@property (nonatomic) OHContact *contactAA;
+@property (nonatomic) OHContact *contactAB;
+@property (nonatomic) OHContact *contactAC;
+@property (nonatomic) OHContact *contactBA;
+@property (nonatomic) OHContact *contactCA;
+
 @end
 
 @implementation OHAlphabeticalSortPostProcessorTests
@@ -60,6 +66,26 @@
     self.contactC.lastName = @"B";
 
     self.contactD = [[OHContact alloc] init];
+    
+    self.contactAA = [[OHContact alloc] init];
+    self.contactAA.firstName = @"A";
+    self.contactAA.lastName = @"A";
+    
+    self.contactAB = [[OHContact alloc] init];
+    self.contactAB.firstName = @"A";
+    self.contactAB.lastName = @"B";
+    
+    self.contactAC = [[OHContact alloc] init];
+    self.contactAC.firstName = @"A";
+    self.contactAC.lastName = @"C";
+    
+    self.contactBA = [[OHContact alloc] init];
+    self.contactBA.firstName = @"B";
+    self.contactBA.lastName = @"A";
+    
+    self.contactCA = [[OHContact alloc] init];
+    self.contactCA.firstName = @"C";
+    self.contactCA.lastName = @"A";
 }
 
 - (void)testSortContactsByFullName
@@ -83,6 +109,22 @@
     OHAlphabeticalSortPostProcessor *postProcessor = [[OHAlphabeticalSortPostProcessor alloc] initWithSortMode:OHAlphabeticalSortPostProcessorSortModeLastName];
     NSOrderedSet<OHContact *> *result = [postProcessor processContacts:NSOrderedSetMake(self.contactD, self.contactB, self.contactA, self.contactC)];
     NSOrderedSet<OHContact *> *expectedResult = NSOrderedSetMake(self.contactB, self.contactC, self.contactA, self.contactD);
+    XCTAssert([result isEqualToOrderedSet:expectedResult]);
+}
+
+- (void)testSortContactsByFirstNameSecondarySort
+{
+    OHAlphabeticalSortPostProcessor *postProcessor = [[OHAlphabeticalSortPostProcessor alloc] initWithSortMode:OHAlphabeticalSortPostProcessorSortModeFirstName];
+    NSOrderedSet<OHContact *> *result = [postProcessor processContacts:NSOrderedSetMake(self.contactAC, self.contactAA, self.contactAB)];
+    NSOrderedSet<OHContact *> *expectedResult = NSOrderedSetMake(self.contactAA, self.contactAB, self.contactAC);
+    XCTAssert([result isEqualToOrderedSet:expectedResult]);
+}
+
+- (void)testSortContactsByLastNameSecondarySort
+{
+    OHAlphabeticalSortPostProcessor *postProcessor = [[OHAlphabeticalSortPostProcessor alloc] initWithSortMode:OHAlphabeticalSortPostProcessorSortModeLastName];
+    NSOrderedSet<OHContact *> *result = [postProcessor processContacts:NSOrderedSetMake(self.contactCA, self.contactAA, self.contactBA)];
+    NSOrderedSet<OHContact *> *expectedResult = NSOrderedSetMake(self.contactAA, self.contactBA, self.contactCA);
     XCTAssert([result isEqualToOrderedSet:expectedResult]);
 }
 
