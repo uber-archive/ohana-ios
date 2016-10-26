@@ -26,6 +26,7 @@
 import UIKit
 import Ohana
 
+
 class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProviderDelegate, OHABAddressBookContactsDataProviderDelegate {
 
     var dataSource: OHContactsDataSource!
@@ -33,7 +34,7 @@ class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProvi
     init() {
         super.init(nibName: nil, bundle: nil)
 
-        let alphabeticalSortProcessor = OHAlphabeticalSortPostProcessor(sortMode: .FullName)
+        let alphabeticalSortProcessor = OHAlphabeticalSortPostProcessor(sortMode: .fullName)
 
         var dataProvider: OHContactsDataProviderProtocol
         if #available(iOS 9.0, *) {
@@ -46,23 +47,23 @@ class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProvi
 
         let maximumSelectedFilter = OHMaximumSelectedCountSelectionFilter(dataSource: dataSource, maximumSelectedCount: 3)
 
-        maximumSelectedFilter.onContactsDataSourceSelectedContactsAttemptedToExceedMaximumCountSignal.addObserver(self) { (self, failedContacts: NSOrderedSet) in
+        maximumSelectedFilter.onContactsDataSourceSelectedContactsAttemptedToExceedMaximumCountSignal.addObserver(self) { [weak self] (observer, failedContacts: NSOrderedSet) in
             for contact in failedContacts.array as! [OHContact] {
-                let alertController = UIAlertController(title: "Failed to Select Contact", message: "\(contact.fullName ?? "Unnamed Contact")\n\nA maximum of three contacts may be selected at a time.", preferredStyle: .Alert)
+                let alertController = UIAlertController(title: "Failed to Select Contact", message: "\(contact.fullName ?? "Unnamed Contact")\n\nA maximum of three contacts may be selected at a time.", preferredStyle: .alert)
 
-                alertController.addAction(UIAlertAction(title: "OK", style: .Cancel) { (action) in
-                    self.dismissViewControllerAnimated(true, completion: nil)
-                    })
+                alertController.addAction(UIAlertAction(title: "OK", style: .cancel) { (action) in
+                    self?.dismiss(animated: true, completion: nil)
+                })
 
-                self.presentViewController(alertController, animated: true, completion: nil)
+                self?.present(alertController, animated: true, completion: nil)
             }
         }
 
         dataSource.selectionFilters = NSOrderedSet(object: maximumSelectedFilter)
 
-        dataSource.onContactsDataSourceReadySignal.addObserver(self, callback: { (self) in
-            dispatch_async(dispatch_get_main_queue()) {
-                self.tableView?.reloadData()
+        dataSource.onContactsDataSourceReadySignal.addObserver(self, callback: { [weak self] (observer) in
+            DispatchQueue.main.async {
+                self?.tableView?.reloadData()
             }
         })
         
@@ -76,9 +77,9 @@ class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProvi
     // MARK: OHCNContactsDataProviderDelegate
 
     @available(iOS 9.0, *)
-    func dataProviderDidHitContactsAuthenticationChallenge(dataProvider: OHCNContactsDataProvider) {
+    func dataProviderDidHitContactsAuthenticationChallenge(_ dataProvider: OHCNContactsDataProvider) {
         let store = CNContactStore()
-        store.requestAccessForEntityType(.Contacts) { (granted, error) in
+        store.requestAccess(for: .contacts) { (granted, error) in
             if granted {
                 dataProvider.loadContacts()
             }
@@ -87,7 +88,7 @@ class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProvi
 
     // MARK: OHABAddressBookContactsDataProviderDelegate
 
-    func dataProviderDidHitAddressBookAuthenticationChallenge(dataProvider: OHABAddressBookContactsDataProvider) {
+    func dataProviderDidHitAddressBookAuthenticationChallenge(_ dataProvider: OHABAddressBookContactsDataProvider) {
         ABAddressBookRequestAccessWithCompletion(nil) { (granted, error) in
             if granted {
                 dataProvider.loadContacts()
@@ -97,27 +98,27 @@ class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProvi
 
     // MARK: UITableViewDataSource
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let contacts = dataSource.contacts {
             return contacts.count
         }
         return 1
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .Default, reuseIdentifier: nil)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
 
-        if let contact = self.dataSource.contacts?.objectAtIndex(indexPath.row) as? OHContact {
+        if let contact = self.dataSource.contacts?.object(at: indexPath.row) as? OHContact {
             cell.textLabel?.text = displayTitleForContact(contact)
 
-            if dataSource.selectedContacts.containsObject(contact) {
+            if dataSource.selectedContacts.contains(contact) {
                 cell.backgroundColor = UIColor(red: 210.0 / 255.0, green: 241.0 / 255.0, blue: 247.0 / 255.0, alpha: 1.0)
             } else {
-                cell.backgroundColor = UIColor.whiteColor()
+                cell.backgroundColor = UIColor.white
             }
         } else {
             cell.textLabel?.text = "No contacts access, open Settings app to fix this"
@@ -128,9 +129,9 @@ class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProvi
 
     // MARK: UITableViewDelegate
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if let contact = self.dataSource.contacts?.objectAtIndex(indexPath.row) as? OHContact {
-            if dataSource.selectedContacts.containsObject(contact) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let contact = self.dataSource.contacts?.object(at: indexPath.row) as? OHContact {
+            if dataSource.selectedContacts.contains(contact) {
                 dataSource.deselectContacts(NSOrderedSet(object: contact))
             } else {
                 dataSource.selectContacts(NSOrderedSet(object: contact))
@@ -141,11 +142,11 @@ class OHMaximumSelectedCountPicker: UITableViewController, OHCNContactsDataProvi
 
     // MARK: Private
 
-    private func displayTitleForContact(contact: OHContact) -> String? {
-        if contact.fullName?.characters.count > 0 {
+    fileprivate func displayTitleForContact(_ contact: OHContact) -> String? {
+        if contact.fullName?.characters.count ?? 0 > 0 {
             return contact.fullName
-        } else if contact.contactFields?.count > 0 {
-            return contact.contactFields?.objectAtIndex(0).value
+        } else if contact.contactFields?.count ?? 0 > 0 {
+            return (contact.contactFields?.object(at: 0) as? OHContactField)?.value
         } else {
             return "(Unnamed Contact)"
         }

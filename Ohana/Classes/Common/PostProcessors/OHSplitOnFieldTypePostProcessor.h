@@ -27,6 +27,8 @@
 
 #import "OHContactsPostProcessorProtocol.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface OHSplitOnFieldTypePostProcessor : NSObject <OHContactsPostProcessorProtocol>
 
 /**
@@ -39,3 +41,5 @@
 - (instancetype)init NS_UNAVAILABLE;
 
 @end
+
+NS_ASSUME_NONNULL_END

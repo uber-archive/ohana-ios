@@ -26,6 +26,7 @@
 import UIKit
 import Ohana
 
+
 class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDelegate, OHABAddressBookContactsDataProviderDelegate {
 
     var dataSource: OHContactsDataSource?
@@ -33,13 +34,13 @@ class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDeleg
     init() {
         super.init(nibName: nil, bundle: nil)
 
-        let splitOnPhoneNumberProcessor = OHSplitOnFieldTypePostProcessor(fieldType: .PhoneNumber)
+        let splitOnPhoneNumberProcessor = OHSplitOnFieldTypePostProcessor(fieldType: .phoneNumber)
 
-        let splitOnEmailAddressProcessor = OHSplitOnFieldTypePostProcessor(fieldType: .EmailAddress)
+        let splitOnEmailAddressProcessor = OHSplitOnFieldTypePostProcessor(fieldType: .emailAddress)
 
         let compositePhoneEmailProcessor = OHCompositeOrPostProcessor(postProcessors: NSOrderedSet(objects: splitOnPhoneNumberProcessor, splitOnEmailAddressProcessor))
 
-        let alphabeticalSortProcessor = OHAlphabeticalSortPostProcessor(sortMode: .FullName)
+        let alphabeticalSortProcessor = OHAlphabeticalSortPostProcessor(sortMode: .fullName)
 
         var dataProvider: OHContactsDataProviderProtocol
         if #available(iOS 9.0, *) {
@@ -50,21 +51,21 @@ class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDeleg
 
         dataSource = OHContactsDataSource(dataProviders: NSOrderedSet(objects: dataProvider), postProcessors: NSOrderedSet(objects: compositePhoneEmailProcessor, alphabeticalSortProcessor))
 
-        dataSource?.onContactsDataSourceReadySignal.addObserver(self, callback: { (self) in
-            dispatch_async(dispatch_get_main_queue()) {
-                self.tableView?.reloadData()
+        dataSource?.onContactsDataSourceReadySignal.addObserver(self, callback: { [weak self] (observer) in
+            DispatchQueue.main.async {
+                self?.tableView?.reloadData()
             }
         })
 
-        dataSource?.onContactsDataSourceSelectedContactsSignal.addObserver(self, callback: { (self, selectedContacts: NSOrderedSet) in
+        dataSource?.onContactsDataSourceSelectedContactsSignal.addObserver(self, callback: { [weak self] (observer, selectedContacts: NSOrderedSet) in
             for contact in selectedContacts.array as! [OHContact] {
-                let alertController = UIAlertController(title: "Selected Contact", message: "\(contact.fullName ?? "Unnamed Contact")\n\((contact.contactFields?.objectAtIndex(0) as! OHContactField).value)", preferredStyle: .Alert)
+                let alertController = UIAlertController(title: "Selected Contact", message: "\(contact.fullName ?? "Unnamed Contact")\n\((contact.contactFields?.object(at: 0) as! OHContactField).value)", preferredStyle: .alert)
 
-                alertController.addAction(UIAlertAction(title: "OK", style: .Cancel) { (action) in
-                    self.dismissViewControllerAnimated(true, completion: nil)
+                alertController.addAction(UIAlertAction(title: "OK", style: .cancel) { (action) in
+                    self?.dismiss(animated: true, completion: nil)
                 })
                 
-                self.presentViewController(alertController, animated: true, completion: nil)
+                self?.present(alertController, animated: true, completion: nil)
             }
         })
 
@@ -78,9 +79,9 @@ class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDeleg
     // MARK: OHCNContactsDataProviderDelegate
 
     @available(iOS 9.0, *)
-    func dataProviderDidHitContactsAuthenticationChallenge(dataProvider: OHCNContactsDataProvider) {
+    func dataProviderDidHitContactsAuthenticationChallenge(_ dataProvider: OHCNContactsDataProvider) {
         let store = CNContactStore()
-        store.requestAccessForEntityType(.Contacts) { (granted, error) in
+        store.requestAccess(for: .contacts) { (granted, error) in
             if granted {
                 dataProvider.loadContacts()
             }
@@ -89,7 +90,7 @@ class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDeleg
 
     // MARK: OHABAddressBookContactsDataProviderDelegate
 
-    func dataProviderDidHitAddressBookAuthenticationChallenge(dataProvider: OHABAddressBookContactsDataProvider) {
+    func dataProviderDidHitAddressBookAuthenticationChallenge(_ dataProvider: OHABAddressBookContactsDataProvider) {
         ABAddressBookRequestAccessWithCompletion(nil) { (granted, error) in
             if granted {
                 dataProvider.loadContacts()
@@ -99,21 +100,21 @@ class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDeleg
 
     // MARK: UITableViewDataSource
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let contacts = dataSource?.contacts {
             return contacts.count
         }
         return 1
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: nil)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
 
-        if let contact = dataSource?.contacts?.objectAtIndex(indexPath.row) as? OHContact {
+        if let contact = dataSource?.contacts?.object(at: indexPath.row) as? OHContact {
             cell.textLabel?.text = displayTitleForContact(contact)
             cell.detailTextLabel?.text = displaySubtitleForContact(contact)
         } else {
@@ -125,29 +126,29 @@ class OHPhoneOrEmailPicker: UITableViewController, OHCNContactsDataProviderDeleg
 
     // MARK: UITableViewDelegate
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if let contact = dataSource?.contacts?.objectAtIndex(indexPath.row) as? OHContact {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let contact = dataSource?.contacts?.object(at: indexPath.row) as? OHContact {
             dataSource?.selectContacts(NSOrderedSet(object: contact))
-            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
             dataSource?.deselectContacts(NSOrderedSet(object: contact))
         }
     }
 
     // MARK: Private
 
-    private func displayTitleForContact(contact: OHContact) -> String? {
-        if contact.fullName?.characters.count > 0 {
+    fileprivate func displayTitleForContact(_ contact: OHContact) -> String? {
+        if contact.fullName?.characters.count ?? 0 > 0 {
             return contact.fullName
-        } else if contact.contactFields?.count > 0 {
-            return contact.contactFields?.objectAtIndex(0).value
+        } else if contact.contactFields?.count ?? 0 > 0 {
+            return (contact.contactFields?.object(at: 0) as? OHContactField)?.value
         } else {
             return "(Unnamed Contact)"
         }
     }
 
-    private func displaySubtitleForContact(contact: OHContact) -> String? {
-        if contact.fullName?.characters.count > 0 && contact.contactFields?.count > 0 {
-            return contact.contactFields?.objectAtIndex(0).value
+    fileprivate func displaySubtitleForContact(_ contact: OHContact) -> String? {
+        if contact.fullName?.characters.count ?? 0 > 0 && contact.contactFields?.count ?? 0 > 0 {
+            return (contact.contactFields?.object(at: 0) as? OHContactField)?.value
         } else {
             return nil
         }

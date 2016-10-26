@@ -27,6 +27,8 @@
 
 #import "OHContactsPostProcessorProtocol.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface OHStatisticsPostProcessor : NSObject <OHContactsPostProcessorProtocol>
 
 extern NSString *_Nonnull kOHStatisticsNumberOfContactFields;  // Total number of contact fields (NSNumber)
@@ -35,3 +37,5 @@ extern NSString *_Nonnull kOHStatisticsNumberOfEmailAddresses; // Number of cont
 extern NSString *_Nonnull kOHStatisticsHasMobilePhoneNumber;   // Whether or not contact has a phone number with label of type "mobile" or "iPhone" (NSNumber *)
 
 @end
+
+NS_ASSUME_NONNULL_END
