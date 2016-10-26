@@ -22,7 +22,7 @@ Ohana is a framework for working with a user's contacts on the iOS platform. It 
 To integrate Ohana into your project using [CocoaPods](http://cocoapods.org), add the following line to your Podfile:
 
 ```ruby
-pod 'Ohana', '~> 1.2'
+pod 'Ohana', '~> 1.3'
 ```
 
 #### Carthage
@@ -30,7 +30,7 @@ pod 'Ohana', '~> 1.2'
 To consume Ohana using [Carthage](https://github.com/Carthage/Carthage) add this to your Cartfile:
 
 ```
-github "uber/ohana-ios" ~> 1.2
+github "uber/ohana-ios" ~> 1.3
 ```
 
 You'll need to manually import Ohana, and its dependencies, libPhoneNumber and UberSignals.

@@ -29,7 +29,7 @@ import Ohana
 class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddressBookContactsDataProviderDelegate {
     var presenter : UIViewController?
 
-    func generateStatistics(presenter: UIViewController) {
+    func generateStatistics(_ presenter: UIViewController) {
         self.presenter = presenter
         var dataProvider: OHContactsDataProviderProtocol
         if #available(iOS 9.0, *) {
@@ -40,13 +40,13 @@ class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddr
 
         dataProvider.onContactsDataProviderErrorSignal.addObserver(self, callback: { (self) in
             let alertController = UIAlertController(title: "No Contacts Access",
-                message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .Alert)
+                message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .alert)
 
-            alertController.addAction(UIAlertAction(title: "OK", style: .Cancel) { (action) in
-                presenter.dismissViewControllerAnimated(true, completion: nil)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel) { (action) in
+                presenter.dismiss(animated: true, completion: nil)
             })
 
-            presenter.presentViewController(alertController, animated: true, completion: nil)
+            presenter.present(alertController, animated: true, completion: nil)
         })
 
 
@@ -58,11 +58,11 @@ class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddr
             var totalPhoneNumbers = 0
             var totalEmailAddresses = 0
             for contact in dataSource.contacts?.array as! [OHContact] {
-                if let numPhoneNumbers = contact.customProperties.objectForKey(kOHStatisticsNumberOfPhoneNumbers)?.integerValue {
-                    totalPhoneNumbers += numPhoneNumbers
+                if let numPhoneNumbers = contact.customProperties.object(forKey: kOHStatisticsNumberOfPhoneNumbers) as? NSNumber {
+                    totalPhoneNumbers += numPhoneNumbers.intValue
                 }
-                if let numEmailAddresses = contact.customProperties.objectForKey(kOHStatisticsNumberOfEmailAddresses)?.integerValue {
-                    totalEmailAddresses += numEmailAddresses
+                if let numEmailAddresses = contact.customProperties.object(forKey: kOHStatisticsNumberOfEmailAddresses) as? NSNumber {
+                    totalEmailAddresses += numEmailAddresses.intValue
                 }
             }
 
@@ -70,13 +70,13 @@ class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddr
             let avgEmailAddresses = Double(totalEmailAddresses) / Double(dataSource.contacts!.count)
 
             let alertController = UIAlertController(title: "Statistics",
-                message: "Number of contacts:\n\(dataSource.contacts!.count)\n\nAverage # of phone numbers fields:\n\(avgPhoneNumbers)\n\nAverage # of email address fields:\n\(avgEmailAddresses)", preferredStyle: .Alert)
+                message: "Number of contacts:\n\(dataSource.contacts!.count)\n\nAverage # of phone numbers fields:\n\(avgPhoneNumbers)\n\nAverage # of email address fields:\n\(avgEmailAddresses)", preferredStyle: .alert)
 
-            alertController.addAction(UIAlertAction(title: "OK", style: .Cancel) { (action) in
-                presenter.dismissViewControllerAnimated(true, completion: nil)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel) { (action) in
+                presenter.dismiss(animated: true, completion: nil)
             })
 
-            presenter.presentViewController(alertController, animated: true, completion: nil)
+            presenter.present(alertController, animated: true, completion: nil)
         });
 
         dataSource.loadContacts()
@@ -85,21 +85,21 @@ class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddr
     // MARK: OHCNContactsDataProviderDelegate
 
     @available(iOS 9.0, *)
-    func dataProviderDidHitContactsAuthenticationChallenge(dataProvider: OHCNContactsDataProvider) {
+    func dataProviderDidHitContactsAuthenticationChallenge(_ dataProvider: OHCNContactsDataProvider) {
         let store = CNContactStore()
-        store.requestAccessForEntityType(.Contacts) { (granted, error) in
+        store.requestAccess(for: .contacts) { (granted, error) in
             if granted {
                 dataProvider.loadContacts()
             } else {
-                dispatch_async(dispatch_get_main_queue()) {
+                DispatchQueue.main.async {
                     let alertController = UIAlertController(title: "No Contacts Access",
-                                                            message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .Alert)
+                                                            message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .alert)
 
-                    alertController.addAction(UIAlertAction(title: "OK", style: .Cancel) { [weak self] (action) in
-                        self?.presenter?.dismissViewControllerAnimated(true, completion: nil)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .cancel) { [weak self] (action) in
+                        self?.presenter?.dismiss(animated: true, completion: nil)
                         })
 
-                    self.presenter?.presentViewController(alertController, animated: true, completion: nil)
+                    self.presenter?.present(alertController, animated: true, completion: nil)
                 }
             }
         }
@@ -107,20 +107,20 @@ class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddr
 
     // MARK: OHABAddressBookContactsDataProviderDelegate
 
-    func dataProviderDidHitAddressBookAuthenticationChallenge(dataProvider: OHABAddressBookContactsDataProvider) {
+    func dataProviderDidHitAddressBookAuthenticationChallenge(_ dataProvider: OHABAddressBookContactsDataProvider) {
         ABAddressBookRequestAccessWithCompletion(nil) { (granted, error) in
             if granted {
                 dataProvider.loadContacts()
             } else {
-                dispatch_async(dispatch_get_main_queue()) {
+                DispatchQueue.main.async {
                     let alertController = UIAlertController(title: "No Contacts Access",
-                                                            message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .Alert)
+                                                            message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .alert)
 
-                    alertController.addAction(UIAlertAction(title: "OK", style: .Cancel) { [weak self] (action) in
-                        self?.presenter?.dismissViewControllerAnimated(true, completion: nil)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .cancel) { [weak self] (action) in
+                        self?.presenter?.dismiss(animated: true, completion: nil)
                         })
 
-                    self.presenter?.presentViewController(alertController, animated: true, completion: nil)
+                    self.presenter?.present(alertController, animated: true, completion: nil)
                 }
             }
         }

@@ -27,6 +27,8 @@
 
 #import "OHContactsPostProcessorProtocol.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSInteger, OHAlphabeticalSortPostProcessorSortMode) {
     OHAlphabeticalSortPostProcessorSortModeFullName,
     OHAlphabeticalSortPostProcessorSortModeFirstName,
@@ -45,3 +47,5 @@ typedef NS_ENUM(NSInteger, OHAlphabeticalSortPostProcessorSortMode) {
 - (instancetype)init NS_UNAVAILABLE;
 
 @end
+
+NS_ASSUME_NONNULL_END
