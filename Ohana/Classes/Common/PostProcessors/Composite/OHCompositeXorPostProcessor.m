@@ -33,13 +33,10 @@
 
 @implementation OHCompositeXorPostProcessor
 
-@synthesize onContactsPostProcessorFinishedSignal = _onContactsPostProcessorFinishedSignal;
-
 - (instancetype)initWithPostProcessors:(NSOrderedSet<id<OHContactsPostProcessorProtocol>> *)postProcessors
 {
     if (self = [super init]) {
         _postProcessors = postProcessors;
-        _onContactsPostProcessorFinishedSignal = [[OHContactsPostProcessorFinishedSignal alloc] init];
     }
     return self;
 }
@@ -79,7 +76,6 @@
             }
         }
     }
-    _onContactsPostProcessorFinishedSignal.fire(processedContacts, self);
     return processedContacts;
 }
 @end

@@ -275,11 +275,6 @@
 
     id postProcessorMock = [self _createPostProcessorMockWithContacts:contacts];
 
-    XCTestExpectation *postProcessorFinishedExpectation = [self expectationWithDescription:@"Post processor finished signal should have fired"];
-    [[postProcessorMock onContactsPostProcessorFinishedSignal] addObserver:self callback:^(typeof(self) self, NSOrderedSet<OHContact *> * _Nonnull processedContacts, id<OHContactsPostProcessorProtocol>  _Nonnull postProcessor) {
-        XCTAssert([processedContacts isEqualToOrderedSet:contacts]);
-        [postProcessorFinishedExpectation fulfill];
-    }];
 
     OHContactsDataSource *dataSource = [[OHContactsDataSource alloc] initWithDataProviders:NSOrderedSetMake(self.dataProviderMock)
                                                                             postProcessors:NSOrderedSetMake(postProcessorMock)];
@@ -350,12 +345,8 @@
 - (id)_createPostProcessorMockWithContacts:(NSOrderedSet<OHContact *> *)contacts
 {
     id postProcessorMock = OCMStrictProtocolMock(@protocol(OHContactsPostProcessorProtocol));
-    OHContactsPostProcessorFinishedSignal *onContactsPostProcessorFinishedSignal = [[OHContactsPostProcessorFinishedSignal alloc] init];
-    OCMStub([postProcessorMock onContactsPostProcessorFinishedSignal]).andReturn(onContactsPostProcessorFinishedSignal);
-    OCMStub([postProcessorMock processContacts:[OCMArg checkWithBlock:^BOOL(id obj) {
-        [postProcessorMock onContactsPostProcessorFinishedSignal].fire(obj, postProcessorMock);
-        return YES;
-    }]]).andReturn(contacts);
+
+    OCMStub([postProcessorMock processContacts:OCMOCK_ANY]).andReturn(contacts);
     return postProcessorMock;
 }
 

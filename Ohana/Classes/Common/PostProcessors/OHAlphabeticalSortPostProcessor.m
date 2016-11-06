@@ -33,12 +33,9 @@
 
 @implementation OHAlphabeticalSortPostProcessor
 
-@synthesize onContactsPostProcessorFinishedSignal = _onContactsPostProcessorFinishedSignal;
-
 - (instancetype)initWithSortMode:(OHAlphabeticalSortPostProcessorSortMode)sortMode
 {
     if (self = [super init]) {
-        _onContactsPostProcessorFinishedSignal = [[OHContactsPostProcessorFinishedSignal alloc] init];
         _sortMode = sortMode;
     }
     return self;
@@ -60,7 +57,6 @@
         }
         return comparison;
     }]];
-    self.onContactsPostProcessorFinishedSignal.fire(processedContacts, self);
     return processedContacts;
 }
 

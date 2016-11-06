@@ -29,20 +29,10 @@
 
 @implementation OHStatisticsPostProcessor
 
-@synthesize onContactsPostProcessorFinishedSignal = _onContactsPostProcessorFinishedSignal;
-
 const NSString *kOHStatisticsNumberOfContactFields = @"kOHStatisticsNumberOfContactFields";
 const NSString *kOHStatisticsNumberOfPhoneNumbers = @"kOHStatisticsNumberOfPhoneNumbers";
 const NSString *kOHStatisticsNumberOfEmailAddresses = @"kOHStatisticsNumberOfEmailAddresses";
 const NSString *kOHStatisticsHasMobilePhoneNumber = @"kOHStatisticsHasMobilePhoneNumber";
-
-- (instancetype)init
-{
-    if (self = [super init]) {
-        _onContactsPostProcessorFinishedSignal = [[OHContactsPostProcessorFinishedSignal alloc] init];
-    }
-    return self;
-}
 
 #pragma mark - OHContactsPostProcessorProtocol
 
@@ -77,7 +67,6 @@ const NSString *kOHStatisticsHasMobilePhoneNumber = @"kOHStatisticsHasMobilePhon
         [contact.customProperties setObject:[NSNumber numberWithBool:hasMobileNumber] forKey:kOHStatisticsHasMobilePhoneNumber];
     }
 
-    self.onContactsPostProcessorFinishedSignal.fire(preProcessedContacts, self);
     return preProcessedContacts;
 }
 

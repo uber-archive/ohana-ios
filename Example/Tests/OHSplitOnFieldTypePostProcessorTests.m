@@ -107,17 +107,4 @@
     XCTAssertEqual(results.count, (NSUInteger)0);
 }
 
-- (void)testSignalFire
-{
-    XCTestExpectation *expectation = [self expectationWithDescription:@"Split on field post processor should fire finished signal"];
-    OHSplitOnFieldTypePostProcessor *postProcessor = [[OHSplitOnFieldTypePostProcessor alloc] initWithFieldType:OHContactFieldTypeOther];
-    [postProcessor.onContactsPostProcessorFinishedSignal addObserver:self callback:^(id self, NSOrderedSet *processedContacts, id<OHContactsPostProcessorProtocol> postProcessor) {
-        [expectation fulfill];
-    }];
-    
-    [postProcessor processContacts:self.testContacts];
-    
-    [self waitForExpectationsWithTimeout:0.1 handler:nil];
-}
-
 @end

@@ -33,13 +33,10 @@
 
 @implementation OHSplitOnFieldTypePostProcessor
 
-@synthesize onContactsPostProcessorFinishedSignal = _onContactsPostProcessorFinishedSignal;
-
 - (instancetype)initWithFieldType:(OHContactFieldType)fieldType
 {
     if (self = [super init]) {
         _fieldType = fieldType;
-        _onContactsPostProcessorFinishedSignal = [[OHContactsPostProcessorFinishedSignal alloc] init];
     }
     return self;
 }
@@ -58,7 +55,6 @@
             }
         }
     }
-    self.onContactsPostProcessorFinishedSignal.fire(processedContacts, self);
     return processedContacts;
 }
 
