@@ -29,6 +29,13 @@
 
 #import "NSOrderedSetMake+Internal.h"
 
+@interface OHContactsDataSource (Testing)
+
+@property (nonatomic, readwrite) NSOrderedSet<id<OHContactsDataProviderProtocol>> *dataProviders;
+@property (nonatomic, readwrite, nullable) NSOrderedSet<id<OHContactsPostProcessorProtocol>> *postProcessors;
+
+@end
+
 @interface OHContactsDataSourceTests : XCTestCase
 
 @property (nonatomic) id dataProviderMock;
@@ -62,8 +69,6 @@
 
     XCTAssertNil(dataSource.selectionFilters);
 
-    XCTAssertNotNil(dataSource.onContactsDataSourceLoadedProvidersSignal);
-    XCTAssertNotNil(dataSource.onContactsDataSourcePostProcessorsFinishedSignal);
     XCTAssertNotNil(dataSource.onContactsDataSourceReadySignal);
     XCTAssertNotNil(dataSource.onContactsDataSourceSelectedContactsSignal);
     XCTAssertNotNil(dataSource.onContactsDataSourceDeselectedContactsSignal);
@@ -248,17 +253,9 @@
     NSOrderedSet *contacts = NSOrderedSetMake([[OHContact alloc] init], [[OHContact alloc] init]);
     OCMStub([self.dataProviderMock contacts]).andReturn(contacts);
 
-    XCTestExpectation *onLoadedProvidersExpectation = [self expectationWithDescription:@"Data source loaded providers signal should have fired"];
-    [dataSource.onContactsDataSourceLoadedProvidersSignal addObserver:self callback:^(typeof(self) self) {
-        [onLoadedProvidersExpectation fulfill];
-    }];
-
-    [dataSource.onContactsDataSourcePostProcessorsFinishedSignal addObserver:self callback:^(typeof(self) self) {
-        XCTAssert(NO);
-    }];
-
     XCTestExpectation *onReadyExpectation = [self expectationWithDescription:@"Data source ready signal should have fired"];
-    [dataSource.onContactsDataSourceReadySignal addObserver:self callback:^(typeof(self) self) {
+
+    [dataSource.onContactsDataSourceReadySignal addObserver:self callback:^(id  _Nonnull self, NSOrderedSet<OHContact *> * _Nullable contacts) {
         XCTAssert([dataSource.contacts isEqualToOrderedSet:contacts]);
         [onReadyExpectation fulfill];
     }];
@@ -284,18 +281,8 @@
     OHContactsDataSource *dataSource = [[OHContactsDataSource alloc] initWithDataProviders:NSOrderedSetMake(self.dataProviderMock)
                                                                             postProcessors:NSOrderedSetMake(postProcessorMock)];
 
-    XCTestExpectation *onLoadedProvidersExpectation = [self expectationWithDescription:@"Data source loaded providers signal should have fired"];
-    [dataSource.onContactsDataSourceLoadedProvidersSignal addObserver:self callback:^(typeof(self) self) {
-        [onLoadedProvidersExpectation fulfill];
-    }];
-
-    XCTestExpectation *onPostProcessorsFinishedSignal = [self expectationWithDescription:@"Post processors finished signal should have fired"];
-    [dataSource.onContactsDataSourcePostProcessorsFinishedSignal addObserver:self callback:^(typeof(self) self) {
-        [onPostProcessorsFinishedSignal fulfill];
-    }];
-
     XCTestExpectation *onReadyExpectation = [self expectationWithDescription:@"Data source ready signal should have fired"];
-    [dataSource.onContactsDataSourceReadySignal addObserver:self callback:^(typeof(self) self) {
+    [dataSource.onContactsDataSourceReadySignal addObserver:self callback:^(id  _Nonnull self, NSOrderedSet<OHContact *> * _Nullable contacts) {
         XCTAssert([dataSource.contacts isEqualToOrderedSet:contacts]);
         [onReadyExpectation fulfill];
     }];

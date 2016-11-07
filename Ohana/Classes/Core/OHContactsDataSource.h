@@ -33,6 +33,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
+ * Signal fired after the contacts are ready to be read.
+ * The contacts property of the DataSource is now ready. The contacts are also provided in the signal.
+ */
+
+CreateSignalInterface(OHContactsDataSourceReadySignal, NSOrderedSet<OHContact *> *contacts);
+
+/**
  *  Signal fired after the data source selects contacts
  *
  *  @discussion selectedContacts contains contacts that have passed through the selection filters and were not already selected
@@ -44,19 +51,9 @@ CreateSignalInterface(OHContactsDataSourceSelectedContactsSignal, NSOrderedSet<O
  *
  *  @discussion deselectedContacts contains contacts that have passed through the selection filters and were previously selected
  */
-CreateSignalInterface(OHContactsDataSourceDeselectedContactsSignal, NSOrderedSet<OHContact *> *deselectedContacts);
+CreateSignalInterface(OHContactsDataSourceDeselectedContactsSignal, NSOrderedSet<OHContact *> *_Nullable deselectedContacts);
 
 @interface OHContactsDataSource : NSObject
-
-/**
- *  Ordered set of data providers that the data source was initialized with
- */
-@property (nonatomic, readonly) NSOrderedSet<id<OHContactsDataProviderProtocol>> *dataProviders;
-
-/**
- *  Ordered set of post processors that the data source was initialized with
- */
-@property (nonatomic, readonly, nullable) NSOrderedSet<id<OHContactsPostProcessorProtocol>> *postProcessors;
 
 /**
  *  Ordered set of selection filters
@@ -66,21 +63,11 @@ CreateSignalInterface(OHContactsDataSourceDeselectedContactsSignal, NSOrderedSet
 @property (nonatomic, nullable) NSOrderedSet<id<OHContactsSelectionFilterProtocol>> *selectionFilters;
 
 /**
- *  Signal fired after the data source has finished loading all of its data providers
- */
-@property (nonatomic, readonly) UBEmptySignal *onContactsDataSourceLoadedProvidersSignal;
-
-/**
- *  Signal fired after the data source has finished running all of its post processors
- */
-@property (nonatomic, readonly) UBEmptySignal *onContactsDataSourcePostProcessorsFinishedSignal;
-
-/**
  *  Signal fired after the data source is ready to be used
  *
  *  @discussion When this signal is fired, the `contacts` property will have been set
  */
-@property (nonatomic, readonly) UBEmptySignal *onContactsDataSourceReadySignal;
+@property (nonatomic, readonly) OHContactsDataSourceReadySignal *onContactsDataSourceReadySignal;
 
 /**
  *  Signal fired after the data source selects contacts
