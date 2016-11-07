@@ -65,7 +65,10 @@ typedef void (^OHABContactsFetchFailedBlock)(NSError *error);
 - (void)loadContacts
 {
     if ([self _authorizationStatus] == kABAuthorizationStatusNotDetermined) {
-        [self.delegate dataProviderDidHitAddressBookAuthenticationChallenge:self];
+        __weak typeof(self) weakSelf = self;
+        [self.delegate dataProviderHitABAddressBookAuthChallenge:self requiresUserAuthentication:^{
+            [weakSelf triggerUserAuthentication];
+        }];
     } else if ([self _authorizationStatus] == kABAuthorizationStatusAuthorized) {
         _status = OHContactsDataProviderStatusProcessing;
         [self _fetchContactsWithSuccess:^(NSOrderedSet<OHContact *> *records) {
@@ -88,6 +91,15 @@ typedef void (^OHABContactsFetchFailedBlock)(NSError *error);
 }
 
 #pragma mark - Private
+
+- (void)triggerUserAuthentication
+{
+    ABAddressBookRequestAccessWithCompletion(nil, ^(bool granted, CFErrorRef error) {
+        if (granted) {
+            [self loadContacts];
+        }
+    });
+}
 
 - (void)_fetchContactsWithSuccess:(OHABContactsFetchCompletionBlock)success failure:(OHABContactsFetchFailedBlock)failure
 {

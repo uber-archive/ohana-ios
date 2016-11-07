@@ -121,7 +121,7 @@ typedef void (^OHCNContactsFetchFailedBlock)(NSError *error);
 
 #pragma mark - UBCLCNContactsDataProvider
 
-- (void)dataProviderDidHitContactsAuthenticationChallenge:(OHCNContactsDataProvider *)dataProvider
+- (void)dataProviderHitCNContactsAuthChallenge:(OHCNContactsDataProvider *)dataProvider requiresUserAuthentication:(void (^)())userAuthenticationTrigger
 {
     [self.authenticationRequestExpectation fulfill];
 }

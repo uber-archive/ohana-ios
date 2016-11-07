@@ -60,23 +60,14 @@ class OHBasicContactPhotosPicker : UITableViewController, OHCNContactsDataProvid
     // MARK: OHCNContactsDataProviderDelegate
 
     @available(iOS 9.0, *)
-    func dataProviderDidHitContactsAuthenticationChallenge(_ dataProvider: OHCNContactsDataProvider) {
-        let store = CNContactStore()
-        store.requestAccess(for: .contacts) { (granted, error) in
-            if granted {
-                dataProvider.loadContacts()
-            }
-        }
+    func dataProviderHitCNContactsAuthChallenge(_ dataProvider: OHCNContactsDataProvider, requiresUserAuthentication userAuthenticationTrigger: @escaping () -> Void) {
+        userAuthenticationTrigger()
     }
 
     // MARK: OHABAddressBookContactsDataProviderDelegate
 
-    func dataProviderDidHitAddressBookAuthenticationChallenge(_ dataProvider: OHABAddressBookContactsDataProvider) {
-        ABAddressBookRequestAccessWithCompletion(nil) { (granted, error) in
-            if granted {
-                dataProvider.loadContacts()
-            }
-        }
+    func dataProviderHitABAddressBookAuthChallenge(_ dataProvider: OHABAddressBookContactsDataProvider, requiresUserAuthentication userAuthenticationTrigger: @escaping () -> Void) {
+        userAuthenticationTrigger()
     }
 
     // MARK: UITableViewDataSource

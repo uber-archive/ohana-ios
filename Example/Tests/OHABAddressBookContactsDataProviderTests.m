@@ -123,7 +123,7 @@ typedef void (^OHABContactsFetchFailedBlock)(NSError *error);
 
 #pragma mark - OHABAddressBookContactsDataProviderDelegate
 
-- (void)dataProviderDidHitAddressBookAuthenticationChallenge:(OHABAddressBookContactsDataProvider *)dataProvider
+- (void)dataProviderHitABAddressBookAuthChallenge:(OHABAddressBookContactsDataProvider *)dataProvider requiresUserAuthentication:(void (^)())userAuthenticationTrigger
 {
     [self.authenticationRequestExpectation fulfill];
 }

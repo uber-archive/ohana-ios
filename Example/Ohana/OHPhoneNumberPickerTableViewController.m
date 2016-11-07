@@ -118,25 +118,16 @@
 
 #pragma mark - OHCNContactsDataProviderDelegate
 
-- (void)dataProviderDidHitContactsAuthenticationChallenge:(OHCNContactsDataProvider *)dataProvider
+- (void)dataProviderHitCNContactsAuthChallenge:(OHCNContactsDataProvider *)dataProvider requiresUserAuthentication:(void (^)())userAuthenticationTrigger
 {
-    CNContactStore *contactStore = [[CNContactStore alloc] init];
-    [contactStore requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError *_Nullable error) {
-        if (granted) {
-            [dataProvider loadContacts];
-        }
-    }];
+    userAuthenticationTrigger();
 }
 
 #pragma mark - OHABAddressBookContactsDataProviderDelegate
 
-- (void)dataProviderDidHitAddressBookAuthenticationChallenge:(OHABAddressBookContactsDataProvider *)dataProvider
+- (void)dataProviderHitABAddressBookAuthChallenge:(OHABAddressBookContactsDataProvider *)dataProvider requiresUserAuthentication:(void (^)())userAuthenticationTrigger
 {
-    ABAddressBookRequestAccessWithCompletion(nil, ^(bool granted, CFErrorRef error) {
-        if (granted) {
-            [dataProvider loadContacts];
-        }
-    });
+    userAuthenticationTrigger();
 }
 
 #pragma mark - Private
