@@ -25,8 +25,8 @@
 
 #import "OHContactsDataSource.h"
 
+CreateSignalImplementation(OHContactsDataSourceReadySignal, NSOrderedSet<OHContact *> *contacts);
 CreateSignalImplementation(OHContactsDataSourceSelectedContactsSignal, NSSet<OHContact *> *selectedContacts);
-
 CreateSignalImplementation(OHContactsDataSourceDeselectedContactsSignal, NSSet<OHContact *> *deselectedContacts);
 
 @interface OHContactsDataSource ()
@@ -34,11 +34,7 @@ CreateSignalImplementation(OHContactsDataSourceDeselectedContactsSignal, NSSet<O
 /**
  *  Read-only public properties
  */
-@property (nonatomic, readwrite) NSOrderedSet<id<OHContactsDataProviderProtocol>> *dataProviders;
-@property (nonatomic, readwrite, nullable) NSOrderedSet<id<OHContactsPostProcessorProtocol>> *postProcessors;
-@property (nonatomic, readwrite) UBEmptySignal *onContactsDataSourceLoadedProvidersSignal;
-@property (nonatomic, readwrite) UBEmptySignal *onContactsDataSourcePostProcessorsFinishedSignal;
-@property (nonatomic, readwrite) UBEmptySignal *onContactsDataSourceReadySignal;
+@property (nonatomic, readwrite) OHContactsDataSourceReadySignal *onContactsDataSourceReadySignal;
 @property (nonatomic, readwrite) OHContactsDataSourceSelectedContactsSignal *onContactsDataSourceSelectedContactsSignal;
 @property (nonatomic, readwrite) OHContactsDataSourceDeselectedContactsSignal *onContactsDataSourceDeselectedContactsSignal;
 @property (nonatomic, readwrite, nullable) NSOrderedSet<OHContact *> *contacts;
@@ -48,9 +44,9 @@ CreateSignalImplementation(OHContactsDataSourceDeselectedContactsSignal, NSSet<O
  *  Used internally to store contacts while processing. Use the contacts property externally.
  */
 @property (nonatomic) NSMutableOrderedSet<OHContact *> *allContacts;
-
+@property (nonatomic, readwrite) NSOrderedSet<id<OHContactsDataProviderProtocol>> *dataProviders;
+@property (nonatomic, readwrite, nullable) NSOrderedSet<id<OHContactsPostProcessorProtocol>> *postProcessors;
 @property (nonatomic, readwrite) NSMutableSet<id<OHContactsDataProviderProtocol>> *completedDataProviders;
-
 @property (nonatomic, readwrite) NSMutableSet<id<OHContactsPostProcessorProtocol>> *completedPostProcessors;
 
 @end
@@ -66,9 +62,7 @@ CreateSignalImplementation(OHContactsDataSourceDeselectedContactsSignal, NSSet<O
         _dataProviders = dataProviders;
         _postProcessors = postProcessors;
 
-        _onContactsDataSourceLoadedProvidersSignal = [[UBEmptySignal alloc] init];
-        _onContactsDataSourcePostProcessorsFinishedSignal = [[UBEmptySignal alloc] init];
-        _onContactsDataSourceReadySignal = [[UBEmptySignal alloc] init];
+        _onContactsDataSourceReadySignal = [[OHContactsDataSourceReadySignal alloc] init];
         _onContactsDataSourceSelectedContactsSignal = [[OHContactsDataSourceSelectedContactsSignal alloc] init];
         _onContactsDataSourceDeselectedContactsSignal = [[OHContactsDataSourceDeselectedContactsSignal alloc] init];
 
@@ -160,8 +154,6 @@ CreateSignalImplementation(OHContactsDataSourceDeselectedContactsSignal, NSSet<O
         [self.allContacts unionOrderedSet:dataProvider.contacts];
         [self.completedDataProviders addObject:dataProvider];
         if (self.completedDataProviders.count == self.dataProviders.count) {
-            // If we have loaded all our providers we can start firing our post processors
-            self.onContactsDataSourceLoadedProvidersSignal.fire();
 
             if (self.postProcessors.count) {
                 NSOrderedSet *postProcessedContacts = self.allContacts;
@@ -169,12 +161,11 @@ CreateSignalImplementation(OHContactsDataSourceDeselectedContactsSignal, NSSet<O
                     postProcessedContacts = [postProcessor processContacts:postProcessedContacts];
                 }
                 self.contacts = postProcessedContacts;
-                self.onContactsDataSourcePostProcessorsFinishedSignal.fire();
             } else {
                 self.contacts = self.allContacts;
             }
 
-            self.onContactsDataSourceReadySignal.fire();
+            self.onContactsDataSourceReadySignal.fire(self.contacts);
         }
     }];
 }

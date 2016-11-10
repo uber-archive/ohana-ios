@@ -61,7 +61,7 @@
         _dataSource = [[OHContactsDataSource alloc] initWithDataProviders:[NSOrderedSet orderedSetWithObjects:dataProvider, nil]
                                                            postProcessors:[NSOrderedSet orderedSetWithObjects:alphabeticalSortProcessor, splitOnPhoneProcessor, nil]];
 
-        [self.dataSource.onContactsDataSourceReadySignal addObserver:self callback:^(typeof(self) self) {
+        [self.dataSource.onContactsDataSourceReadySignal addObserver:self callback:^(typeof(self) self, NSOrderedSet<OHContact *> * _Nonnull contacts) {
             self.fuzzyMatchingUtility = [[OHFuzzyMatchingUtility alloc] initWithContacts:self.dataSource.contacts];
             dispatch_async(dispatch_get_main_queue(), ^(){
                 [self.tableView reloadData];

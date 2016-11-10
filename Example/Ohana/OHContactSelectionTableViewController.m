@@ -57,7 +57,7 @@
         _dataSource = [[OHContactsDataSource alloc] initWithDataProviders:[NSOrderedSet orderedSetWithObjects:dataProvider, nil]
                                                            postProcessors:[NSOrderedSet orderedSetWithObjects:alphabeticalSortProcessor, nil]];
 
-        [self.dataSource.onContactsDataSourceReadySignal addObserver:self callback:^(typeof(self) self) {
+        [self.dataSource.onContactsDataSourceReadySignal addObserver:self callback:^(typeof(self) self, NSOrderedSet<OHContact *> * _Nonnull contacts) {
             self.contactsByLetter = [self _contactsByLetterDictionaryForContacts:self.dataSource.contacts];
             [self.tableView reloadData];
         }];
