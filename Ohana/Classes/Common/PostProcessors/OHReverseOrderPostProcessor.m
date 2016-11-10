@@ -27,22 +27,11 @@
 
 @implementation OHReverseOrderPostProcessor
 
-@synthesize onContactsPostProcessorFinishedSignal = _onContactsPostProcessorFinishedSignal;
-
-- (instancetype)init
-{
-    if (self = [super init]) {
-        _onContactsPostProcessorFinishedSignal = [[OHContactsPostProcessorFinishedSignal alloc] init];
-    }
-    return self;
-}
-
 #pragma mark - OHContactsPostProcessorProtocol
 
 - (NSOrderedSet<OHContact *> *)processContacts:(NSOrderedSet<OHContact *> *)preProcessedContacts
 {
     NSOrderedSet<OHContact *> *processedContacts = [preProcessedContacts reversedOrderedSet];
-    self.onContactsPostProcessorFinishedSignal.fire(processedContacts, self);
     return processedContacts;
 }
 

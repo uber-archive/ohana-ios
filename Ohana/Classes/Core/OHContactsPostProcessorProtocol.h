@@ -42,11 +42,6 @@ CreateSignalInterface(OHContactsPostProcessorFinishedSignal, NSOrderedSet<OHCont
 @protocol OHContactsPostProcessorProtocol <NSObject>
 
 /**
- *  Signal to be fired after the contacts post processor has finished its work (see signal definition)
- */
-@property (nonatomic, readonly) OHContactsPostProcessorFinishedSignal *onContactsPostProcessorFinishedSignal;
-
-/**
  *  The main method of any post processor, this method does the actual post processing on the contact data
  *
  *  @discussion The post processor may add, remove, or modify contacts passed into it.

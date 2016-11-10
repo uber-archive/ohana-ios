@@ -40,8 +40,6 @@
 
 @implementation OHPhoneNumberFormattingPostProcessor
 
-@synthesize onContactsPostProcessorFinishedSignal = _onContactsPostProcessorFinishedSignal;
-
 const NSString *kOHFormattedPhoneNumberE164 = @"kOHFormattedPhoneNumberE164";
 const NSString *kOHFormattedPhoneNumberInternational = @"kOHFormattedPhoneNumberInternational";
 const NSString *kOHFormattedPhoneNumberNational = @"kOHFormattedPhoneNumberNational";
@@ -50,7 +48,6 @@ const NSString *kOHFormattedPhoneNumberRFC3966 = @"kOHFormattedPhoneNumberRFC396
 - (instancetype)initWithFormats:(OHPhoneNumberFormat)formats
 {
     if (self = [super init]) {
-        _onContactsPostProcessorFinishedSignal = [[OHContactsPostProcessorFinishedSignal alloc] init];
         _formats = formats;
     }
     return self;
@@ -98,7 +95,6 @@ const NSString *kOHFormattedPhoneNumberRFC3966 = @"kOHFormattedPhoneNumberRFC396
             }
         }
     }
-    self.onContactsPostProcessorFinishedSignal.fire(preProcessedContacts, self);
     return preProcessedContacts;
 }
 

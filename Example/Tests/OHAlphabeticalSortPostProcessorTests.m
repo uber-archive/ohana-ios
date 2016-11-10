@@ -128,17 +128,4 @@
     XCTAssert([result isEqualToOrderedSet:expectedResult]);
 }
 
-- (void)testSignalFire
-{
-    XCTestExpectation *expectation = [self expectationWithDescription:@"Post processor should fire finished signal"];
-    OHAlphabeticalSortPostProcessor *postProcessor = [[OHAlphabeticalSortPostProcessor alloc] initWithSortMode:OHAlphabeticalSortPostProcessorSortModeFullName];
-    [postProcessor.onContactsPostProcessorFinishedSignal addObserver:self callback:^(typeof(self) self, NSOrderedSet<OHContact *> * _Nonnull processedContacts, id<OHContactsPostProcessorProtocol>  _Nonnull postProcessor) {
-        [expectation fulfill];
-    }];
-
-    [postProcessor processContacts:[NSOrderedSet orderedSet]];
-
-    [self waitForExpectationsWithTimeout:0.1 handler:nil];
-}
-
 @end

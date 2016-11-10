@@ -64,7 +64,6 @@
 		38CF9EB98CE7729C2B3FAA082487A71E /* NBMetadataCoreMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 502B3583D2283B7EACFF00651211429F /* NBMetadataCoreMapper.m */; };
 		39F884164651832D2E08F3A596673AD5 /* OHFuzzyMatchingUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B48444B54EB73CD3F6FA4C311576FE /* OHFuzzyMatchingUtility.m */; };
 		3B86F97B3DFB07631031D706895D2BC5 /* NBNumberFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 397AFEAC541D143D10673DDFF9A6287E /* NBNumberFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BC1AD7B44709FBE39983A166C7138D3 /* OHContactsPostProcessorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B1721591678AE0E308FD8D7E4C3328 /* OHContactsPostProcessorProtocol.m */; };
 		3BDEA2B33E31B08D8E0533A5BC4AB5C8 /* OHRequiredPostalAddressPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA55815E11BF09744C8E685E7559CE08 /* OHRequiredPostalAddressPostProcessor.m */; };
 		3C3869E639B025E7374258F98B5165C2 /* OHRequiredPostalAddressPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 266440FF2D0E8CF848B559FDB3E9414C /* OHRequiredPostalAddressPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DD358EEF580DB18FEA3548C88B13E36 /* NBMetadataCoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6F9880C34DCB43DD3D2334A1068AB /* NBMetadataCoreTest.m */; };
@@ -113,7 +112,6 @@
 		61951F55E72A85F89699527A9C69901E /* NSNotificationCenter+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE5515D85CDBE3F25E5208CDB96FC0 /* NSNotificationCenter+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		61CCAE42A1E69BF35C695E15C14D174C /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519A1B0B4F09E41749D40C72B55418BB /* Contacts.framework */; };
 		6248411A7DD6B4C757A847B4A1BFE50D /* UberSignals-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6836EBB5302A29881CCA703D96EF739E /* UberSignals-iOS8.3-dummy.m */; };
-		62BF6D63238CC113672727633D649629 /* OHContactsPostProcessorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B1721591678AE0E308FD8D7E4C3328 /* OHContactsPostProcessorProtocol.m */; };
 		65BD2EAA1888CC88B8CA7E28B4F9EAEB /* OCMLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E7AEE94A303EA8918C0CEF1149AD1D /* OCMLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6863410120C06460D76644AB6205A753 /* NBPhoneMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = EA2A138BC3A09DC3F900A113018DC407 /* NBPhoneMetaData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		686B378129E94577605E62FD1572EFD3 /* OCMExpectationRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC8D427443D5B5B34BEB46CDACF7B6D /* OCMExpectationRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -484,7 +482,6 @@
 		84A4089B62E4CF848FD989BA95F6749D /* OCMNotificationPoster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMNotificationPoster.h; path = Source/OCMock/OCMNotificationPoster.h; sourceTree = "<group>"; };
 		859964242C270EB1FF3892E2DACDD126 /* UberSignals-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UberSignals-iOS8.3-prefix.pch"; path = "../UberSignals-iOS8.3/UberSignals-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
 		8744BE3117657C7D0A6B26A0BC37E71C /* OHRequiredFieldSelectionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHRequiredFieldSelectionFilter.m; sourceTree = "<group>"; };
-		87B1721591678AE0E308FD8D7E4C3328 /* OHContactsPostProcessorProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OHContactsPostProcessorProtocol.m; sourceTree = "<group>"; };
 		8860D3898C0F5DBD9586DDEFDEE94478 /* OCMNotificationPoster.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMNotificationPoster.m; path = Source/OCMock/OCMNotificationPoster.m; sourceTree = "<group>"; };
 		8867BE0EB84C7245F43D5DCDA58BEF54 /* Ohana-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Ohana-iOS8.3-dummy.m"; path = "../Ohana-iOS8.3/Ohana-iOS8.3-dummy.m"; sourceTree = "<group>"; };
 		8895AF5CD97B5116A69EE2F092FD4897 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../libPhoneNumber-iOS-iOS8.3/Info.plist"; sourceTree = "<group>"; };
@@ -949,7 +946,6 @@
 				0604C0226E71F954BFD0CD9C43C609A0 /* OHContactsDataSource.h */,
 				428781BB8560FFAE7D2C688EABEABDBF /* OHContactsDataSource.m */,
 				3151B6CF0B842A98E52E926887943146 /* OHContactsPostProcessorProtocol.h */,
-				87B1721591678AE0E308FD8D7E4C3328 /* OHContactsPostProcessorProtocol.m */,
 				032AF964D5F7900B4252D215472D2FA1 /* OHContactsSelectionFilterProtocol.h */,
 			);
 			path = Core;
@@ -1540,7 +1536,6 @@
 				B16662D8B5DAA15582C7D43402E5B9A4 /* OHContactField.m in Sources */,
 				C0FF4260F4F0D615CE0E22D281EA3A30 /* OHContactsDataProviderProtocol.m in Sources */,
 				BE226DC3D130BCA378CB1881D6ECCA58 /* OHContactsDataSource.m in Sources */,
-				62BF6D63238CC113672727633D649629 /* OHContactsPostProcessorProtocol.m in Sources */,
 				39F884164651832D2E08F3A596673AD5 /* OHFuzzyMatchingUtility.m in Sources */,
 				8EFDF1491EF62C8E856B1508D1BB9BEB /* OHMaximumSelectedCountSelectionFilter.m in Sources */,
 				CD3904BED13F89729148C86AD02AEB4B /* OHMinimumSelectedCountSelectionFilter.m in Sources */,
@@ -1658,7 +1653,6 @@
 				19701EFFEDE1000EA2D6036546FC3B83 /* OHContactField.m in Sources */,
 				A3BCE1F893923E01899E79AB87B83DA7 /* OHContactsDataProviderProtocol.m in Sources */,
 				BECD035A2A1BD69E8C435FEBEACBDE09 /* OHContactsDataSource.m in Sources */,
-				3BC1AD7B44709FBE39983A166C7138D3 /* OHContactsPostProcessorProtocol.m in Sources */,
 				FB1E7F005BBA97F7B30894F01D0F9FE8 /* OHFuzzyMatchingUtility.m in Sources */,
 				1B3A00AFE7FDAA6CC5A9B95D27DC6F5C /* OHMaximumSelectedCountSelectionFilter.m in Sources */,
 				00CDD636DE45B02DD20C7EC9BDCA1BF9 /* OHMinimumSelectedCountSelectionFilter.m in Sources */,
