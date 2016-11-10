@@ -47,7 +47,7 @@ You'll need to manually import Ohana, and its dependencies, libPhoneNumber and U
 
 * Nick Entin ([@NickEntin](https://github.com/NickEntin))
 * Maxwell Elliott (maxwelle@uber.com, [@maxwellE](https://github.com/maxwellE))
-* Doug Togno (dtogno@uber.com)
+* Doug Togno (dtogno@uber.com, [@Darj](https://github.com/Darj))
 * Adam Zethraeus (adamz@uber.com, [@zethraeus](https://github.com/zethraeus))
 
 ## Contributions
