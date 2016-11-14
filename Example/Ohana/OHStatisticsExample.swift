@@ -38,15 +38,8 @@ class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddr
             dataProvider = OHABAddressBookContactsDataProvider(delegate: self)
         }
 
-        dataProvider.onContactsDataProviderErrorSignal.addObserver(self, callback: { (self) in
-            let alertController = UIAlertController(title: "No Contacts Access",
-                message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .alert)
-
-            alertController.addAction(UIAlertAction(title: "OK", style: .cancel) { (action) in
-                presenter.dismiss(animated: true, completion: nil)
-            })
-
-            presenter.present(alertController, animated: true, completion: nil)
+        dataProvider.onContactsDataProviderErrorSignal.addObserver(self, callback: { [weak self] (observer) in
+            self?.alertNoAddressBookAccess()
         })
 
 
@@ -82,47 +75,29 @@ class OHStatisticsExample : NSObject, OHCNContactsDataProviderDelegate, OHABAddr
         dataSource.loadContacts()
     }
 
+    func alertNoAddressBookAccess() {
+        DispatchQueue.main.async {
+            let alertController = UIAlertController(title: "No Contacts Access",
+                                                    message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .alert)
+
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel) { [weak self] (action) in
+                self?.presenter?.dismiss(animated: true, completion: nil)
+            })
+
+            self.presenter?.present(alertController, animated: true, completion: nil)
+        }
+    }
+
     // MARK: OHCNContactsDataProviderDelegate
 
     @available(iOS 9.0, *)
-    func dataProviderDidHitContactsAuthenticationChallenge(_ dataProvider: OHCNContactsDataProvider) {
-        let store = CNContactStore()
-        store.requestAccess(for: .contacts) { (granted, error) in
-            if granted {
-                dataProvider.loadContacts()
-            } else {
-                DispatchQueue.main.async {
-                    let alertController = UIAlertController(title: "No Contacts Access",
-                                                            message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .alert)
-
-                    alertController.addAction(UIAlertAction(title: "OK", style: .cancel) { [weak self] (action) in
-                        self?.presenter?.dismiss(animated: true, completion: nil)
-                        })
-
-                    self.presenter?.present(alertController, animated: true, completion: nil)
-                }
-            }
-        }
+    func dataProviderHitCNContactsAuthChallenge(_ dataProvider: OHCNContactsDataProvider, requiresUserAuthentication userAuthenticationTrigger: @escaping () -> Void) {
+        userAuthenticationTrigger()
     }
 
     // MARK: OHABAddressBookContactsDataProviderDelegate
 
-    func dataProviderDidHitAddressBookAuthenticationChallenge(_ dataProvider: OHABAddressBookContactsDataProvider) {
-        ABAddressBookRequestAccessWithCompletion(nil) { (granted, error) in
-            if granted {
-                dataProvider.loadContacts()
-            } else {
-                DispatchQueue.main.async {
-                    let alertController = UIAlertController(title: "No Contacts Access",
-                                                            message: "Open the Settings app and enable contacts access in Privacy Settings", preferredStyle: .alert)
-
-                    alertController.addAction(UIAlertAction(title: "OK", style: .cancel) { [weak self] (action) in
-                        self?.presenter?.dismiss(animated: true, completion: nil)
-                        })
-
-                    self.presenter?.present(alertController, animated: true, completion: nil)
-                }
-            }
-        }
+    func dataProviderHitABAddressBookAuthChallenge(_ dataProvider: OHABAddressBookContactsDataProvider, requiresUserAuthentication userAuthenticationTrigger: @escaping () -> Void) {
+        userAuthenticationTrigger()
     }
 }

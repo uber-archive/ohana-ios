@@ -33,7 +33,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol OHABAddressBookContactsDataProviderDelegate <NSObject>
 
-- (void)dataProviderDidHitAddressBookAuthenticationChallenge:(OHABAddressBookContactsDataProvider *)dataProvider;
+/**
+ * dataProvider:requiresUserAuthentication: is called if the OHABAddressBookContactsDataProvider is unable to 
+ * access the system contacts because access has not yet been granted.
+ * The consumer may chose to trigger the user authentication prompt by invoking the userAuthenticationTrigger
+ * callback. Once the user has authenticated, contact loading will be attempted again.
+ */
+- (void)dataProviderHitABAddressBookAuthChallenge:(OHABAddressBookContactsDataProvider *)dataProvider requiresUserAuthentication:(void (^)())userAuthenticationTrigger;
 
 @end
 

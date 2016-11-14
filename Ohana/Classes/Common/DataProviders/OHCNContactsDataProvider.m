@@ -58,7 +58,10 @@ const NSString *kOHCNContactsDataProviderContactIdentifierKey = @"kOHCNContactsD
 - (void)loadContacts
 {
     if ([self _authorizationStatus] == CNAuthorizationStatusNotDetermined) {
-        [self.delegate dataProviderDidHitContactsAuthenticationChallenge:self];
+        __weak typeof(self) weakSelf = self;
+        [self.delegate dataProviderHitCNContactsAuthChallenge:self requiresUserAuthentication:^{
+            [weakSelf triggerUserAuthentication];
+        }];
     } else if ([self _authorizationStatus] == CNAuthorizationStatusAuthorized) {
         _status = OHContactsDataProviderStatusProcessing;
         [self _fetchContactsWithSuccess:^(NSOrderedSet<OHContact *> *contacts) {
@@ -81,6 +84,16 @@ const NSString *kOHCNContactsDataProviderContactIdentifierKey = @"kOHCNContactsD
 }
 
 #pragma mark - Private
+
+- (void)triggerUserAuthentication
+{
+    CNContactStore *contactStore = [[CNContactStore alloc] init];
+    [contactStore requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError *_Nullable error) {
+        if (granted) {
+            [self loadContacts];
+        }
+    }];
+}
 
 - (CNAuthorizationStatus)_authorizationStatus
 {
