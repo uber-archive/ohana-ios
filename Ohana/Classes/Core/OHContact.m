@@ -64,8 +64,8 @@
     copy.contactFields = [self.contactFields copy];
     copy.postalAddresses = [self.postalAddresses copy];
     copy.thumbnailPhoto = [self.thumbnailPhoto copy];
-    copy.tags = [self.tags copy];
-    copy.customProperties = [self.customProperties copy];
+    copy.tags = [self.tags mutableCopy];
+    copy.customProperties = [self.customProperties mutableCopy];
     return copy;
 }
 
