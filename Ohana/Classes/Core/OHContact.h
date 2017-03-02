@@ -35,47 +35,47 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *	Contact's full name
  */
-@property (nonatomic, nullable) NSString *fullName;
+@property (nonatomic, nullable, copy) NSString *fullName;
 
 /**
  *	Contact's first name
  */
-@property (nonatomic, nullable) NSString *firstName;
+@property (nonatomic, nullable, copy) NSString *firstName;
 
 /**
  *	Contact's last name
  */
-@property (nonatomic, nullable) NSString *lastName;
+@property (nonatomic, nullable, copy) NSString *lastName;
 
 /**
  *  Organization name
  */
-@property (nonatomic, nullable) NSString *organizationName;
+@property (nonatomic, nullable, copy) NSString *organizationName;
 
 /**
  *  Job title
  */
-@property (nonatomic, nullable) NSString *jobTitle;
+@property (nonatomic, nullable, copy) NSString *jobTitle;
 
 /**
  *  Department name
  */
-@property (nonatomic, nullable) NSString *departmentName;
+@property (nonatomic, nullable, copy) NSString *departmentName;
 
 /**
  *  Contact fields associated with the contact
  */
-@property (nonatomic, nullable) NSOrderedSet<OHContactField *> *contactFields;
+@property (nonatomic, nullable, copy) NSOrderedSet<OHContactField *> *contactFields;
 
 /**
  *  Postal addresses associated with the contact
  */
-@property (nonatomic, nullable) NSOrderedSet<OHContactAddress *> *postalAddresses;
+@property (nonatomic, nullable, copy) NSOrderedSet<OHContactAddress *> *postalAddresses;
 
 /**
  *  Thumbnail photo
  */
-@property (nonatomic, nullable) UIImage *thumbnailPhoto;
+@property (nonatomic, nullable, copy) UIImage *thumbnailPhoto;
 
 /**
  *  Set of custom tags (may be added by data providers, post processors, etc.)
