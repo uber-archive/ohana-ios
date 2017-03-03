@@ -1,6 +1,6 @@
 {
   "name": "Ohana",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "summary": "Contacts simplified",
   "homepage": "https://github.com/uber/ohana-ios",
   "license": {
@@ -15,7 +15,7 @@
   },
   "source": {
     "git": "https://github.com/uber/ohana-ios.git",
-    "tag": "1.2.1"
+    "tag": "2.0.0"
   },
   "requires_arc": true,
   "platforms": {
