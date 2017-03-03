@@ -66,6 +66,22 @@
     XCTAssertTrue([self.contact isEqualToContact:contactCopy]);
 }
 
+- (void)testMutableCopy
+{
+    OHContact *contactCopy = [self.contact copy];
+    [contactCopy.tags addObject:@"TestTag3"];
+    XCTAssertTrue([contactCopy.tags containsObject:@"TestTag3"]);
+    [contactCopy.customProperties setObject:@"TestProperty3" forKey:@"TestProperty3Key"];
+    XCTAssertTrue([[contactCopy.customProperties objectForKey:@"TestProperty3Key"] isEqualToString:@"TestProperty3"]);
+}
+
+- (void)testImmutability
+{
+    NSString *fullName = self.contact.fullName;
+    fullName = @"Invalid";
+    XCTAssertEqualObjects(self.contact.fullName, @"Full Name");
+}
+
 - (void)testEquality
 {
     OHContact *testContact = [[OHContact alloc] init];
