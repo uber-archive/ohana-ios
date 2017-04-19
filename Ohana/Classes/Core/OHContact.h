@@ -33,6 +33,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface OHContact : NSObject <NSCopying>
 
 /**
+ *	Contact's identifier
+ */
+@property (nonatomic) NSString *identifier;
+
+/**
  *	Contact's full name
  */
 @property (nonatomic, nullable, copy) NSString *fullName;

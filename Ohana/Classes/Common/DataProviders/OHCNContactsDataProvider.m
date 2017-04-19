@@ -40,8 +40,6 @@ typedef void (^OHCNContactsDataProviderFetchFailedBlock)(NSError *error);
 
 @synthesize onContactsDataProviderFinishedLoadingSignal = _onContactsDataProviderFinishedLoadingSignal,onContactsDataProviderErrorSignal = _onContactsDataProviderErrorSignal, status = _status, contacts = _contacts;
 
-const NSString *kOHCNContactsDataProviderContactIdentifierKey = @"kOHCNContactsDataProviderContactIdentifierKey";
-
 - (instancetype)initWithDelegate:(id<OHCNContactsDataProviderDelegate>)delegate
 {
     if (self = [super init]) {
@@ -150,8 +148,8 @@ const NSString *kOHCNContactsDataProviderContactIdentifierKey = @"kOHCNContactsD
 - (OHContact *)_contactForCNContact:(CNContact *)cnContact
 {
     OHContact *contact = [[OHContact alloc] init];
-    [contact.customProperties setObject:cnContact.identifier forKey:kOHCNContactsDataProviderContactIdentifierKey];
 
+    contact.identifier = cnContact.identifier;
     contact.fullName = [CNContactFormatter stringFromContact:cnContact style:CNContactFormatterStyleFullName];
     contact.firstName = cnContact.givenName;
     contact.lastName = cnContact.familyName;
