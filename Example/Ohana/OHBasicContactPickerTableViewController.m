@@ -59,7 +59,9 @@
 
         [self.dataSource.onContactsDataSourceReadySignal addObserver:self callback:^(typeof(self) self, NSOrderedSet<OHContact *> * _Nonnull contacts) {
             self.contactsByLetter = [self _contactsByLetterDictionaryForContacts:self.dataSource.contacts];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.tableView reloadData];
+            });
         }];
 
         [self.dataSource.onContactsDataSourceSelectedContactsSignal addObserver:self callback:^(typeof(self) self, NSOrderedSet<OHContact *> * _Nonnull selectedContacts) {
