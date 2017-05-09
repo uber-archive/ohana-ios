@@ -62,7 +62,7 @@ class OHSMSPicker: UITableViewController, OHCNContactsDataProviderDelegate, OHAB
                     if let phoneNumber = contact.contactFields?.object(at: 0) as? OHContactField {
                         composer.recipients = [ phoneNumber.value ]
                     }
-                    composer.messageComposeDelegate = self as? MFMessageComposeViewControllerDelegate
+                    composer.messageComposeDelegate = self
                     self?.present(composer, animated: true, completion: nil)
                 } else {
                     let alertController = UIAlertController(title: "Unable to Send SMS", message: "Please run on a device that can send SMS messages.", preferredStyle: .alert)
