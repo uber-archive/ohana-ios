@@ -195,7 +195,6 @@ CreateSignalInterface(UBMutableDictionarySignal, NSMutableDictionary *mutableDic
 - (instancetype)initWithProtocol:(Protocol *)protocol NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
-+ (instancetype)new NS_UNAVAILABLE;
 
 @end
 
