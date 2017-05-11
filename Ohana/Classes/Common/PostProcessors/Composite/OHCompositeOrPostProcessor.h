@@ -34,6 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithPostProcessors:(NSOrderedSet<id<OHContactsPostProcessorProtocol>> *)postProcessors NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
 
 @end
 

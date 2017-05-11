@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithLabel:(NSString *)label street:(NSString *)street city:(NSString *)city state:(NSString *)state postalCode:(NSString *)postalCode country:(NSString *)country dataProviderIdentifier:(NSString *)dataProviderIdentifier NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
 
 /**
  *  Label (i.e. "home", "work")

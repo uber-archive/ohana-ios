@@ -42,6 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithType:(OHContactFieldType)type label:(NSString *)label value:(NSString *)value dataProviderIdentifier:(NSString *)dataProviderIdentifier NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
 
 /**
  *  Type of contact field (see enum above for options)

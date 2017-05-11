@@ -124,6 +124,7 @@ typedef BOOL (^FilterContactsBlock)(OHContact *contact);
 - (instancetype)initWithDataProviders:(NSOrderedSet<id<OHContactsDataProviderProtocol>> *)dataProviders postProcessors:(NSOrderedSet<id<OHContactsPostProcessorProtocol>> *_Nullable)postProcessors selectionFilters:(NSOrderedSet<id<OHContactsSelectionFilterProtocol>> *_Nullable)selectionFilters;
 
 - (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
 
 /**
  *  Tells the data source to begin loading contacts data from the data providers and then pass that contact data through the post processors.
