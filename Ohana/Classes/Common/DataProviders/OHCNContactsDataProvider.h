@@ -52,8 +52,6 @@ extern NSString *kOHCNContactsDataProviderContactIdentifierKey;  // Identifier u
 
 - (instancetype)init NS_UNAVAILABLE;
 
-+ (OHCNContactsDataProvider *)new NS_UNAVAILABLE;
-
 @end
 
 NS_ASSUME_NONNULL_END

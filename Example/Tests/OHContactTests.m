@@ -38,6 +38,8 @@
 
 - (void)setUp
 {
+    [super setUp];
+    
     self.contact = [[OHContact alloc] init];
     self.contact.fullName = @"Full Name";
     self.contact.firstName = @"First";

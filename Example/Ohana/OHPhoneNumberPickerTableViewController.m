@@ -53,7 +53,9 @@
                                                            postProcessors:[NSOrderedSet orderedSetWithObjects:alphabeticalSortProcessor, splitOnPhoneProcessor, nil]];
 
         [self.dataSource.onContactsDataSourceReadySignal addObserver:self callback:^(typeof(self) self, NSOrderedSet<OHContact *> * _Nonnull contacts) {
-            [self.tableView reloadData];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
         }];
 
         [self.dataSource.onContactsDataSourceSelectedContactsSignal addObserver:self callback:^(typeof(self) self, NSOrderedSet<OHContact *> * _Nonnull selectedContacts) {

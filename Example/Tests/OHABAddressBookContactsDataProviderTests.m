@@ -25,7 +25,6 @@
 
 #import <XCTest/XCTest.h>
 #import <Ohana/Ohana.h>
-#import <OCMock/OCMock.h>
 
 #import "NSOrderedSetMake+Internal.h"
 
