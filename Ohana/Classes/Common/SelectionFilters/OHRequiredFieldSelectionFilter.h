@@ -39,6 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithFieldType:(OHContactFieldType)fieldType NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
 
 @end
 

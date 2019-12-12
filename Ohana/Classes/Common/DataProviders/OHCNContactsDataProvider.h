@@ -51,6 +51,7 @@ extern NSString *_Nonnull kOHCNContactsDataProviderContactIdentifierKey;  // Ide
 - (instancetype)initWithDelegate:(id<OHCNContactsDataProviderDelegate>)delegate NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
 
 @end
 

@@ -45,6 +45,7 @@ typedef NS_ENUM(NSInteger, OHAlphabeticalSortPostProcessorSortMode) {
 - (instancetype)initWithSortMode:(OHAlphabeticalSortPostProcessorSortMode)sortMode NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
 
 @end
 

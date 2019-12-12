@@ -48,6 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithDelegate:(id<OHABAddressBookContactsDataProviderDelegate>)delegate NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
 
 @end
 
