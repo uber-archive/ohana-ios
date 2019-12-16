@@ -31,10 +31,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OHStatisticsPostProcessor : NSObject <OHContactsPostProcessorProtocol>
 
-extern NSString *_Nonnull kOHStatisticsNumberOfContactFields;  // Total number of contact fields (NSNumber)
-extern NSString *_Nonnull kOHStatisticsNumberOfPhoneNumbers;   // Number of contact fields of type UBContactFieldTypePhoneNumber (NSNumber *)
-extern NSString *_Nonnull kOHStatisticsNumberOfEmailAddresses; // Number of contact fields of type UBContactFieldTypeEmailAddress (NSNumber *)
-extern NSString *_Nonnull kOHStatisticsHasMobilePhoneNumber;   // Whether or not contact has a phone number with label of type "mobile" or "iPhone" (NSNumber *)
+extern NSString *kOHStatisticsNumberOfContactFields;  // Total number of contact fields (NSNumber)
+extern NSString *kOHStatisticsNumberOfPhoneNumbers;   // Number of contact fields of type UBContactFieldTypePhoneNumber (NSNumber *)
+extern NSString *kOHStatisticsNumberOfEmailAddresses; // Number of contact fields of type UBContactFieldTypeEmailAddress (NSNumber *)
+extern NSString *kOHStatisticsHasMobilePhoneNumber;   // Whether or not contact has a phone number with label of type "mobile" or "iPhone" (NSNumber *)
 
 @end
 

@@ -41,12 +41,6 @@
 
 @implementation OHPhoneNumberFormattingPostProcessorTests
 
-- (void)setUp
-{
-    [super setUp];
-
-
-}
 
 - (void)testFormatting
 {

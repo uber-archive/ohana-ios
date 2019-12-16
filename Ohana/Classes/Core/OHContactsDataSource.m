@@ -67,7 +67,7 @@ CreateSignalImplementation(OHContactsDataSourceDeselectedContactsSignal, NSSet<O
         _onContactsDataSourceDeselectedContactsSignal = [[OHContactsDataSourceDeselectedContactsSignal alloc] init];
 
         _allContacts = [[NSMutableOrderedSet<OHContact *> alloc] init];
-        _selectedContacts = [[NSMutableOrderedSet alloc] init];
+        _selectedContacts = [[NSMutableOrderedSet<OHContact *> alloc] init];
 
 
         _completedDataProviders = [[NSMutableSet<id<OHContactsDataProviderProtocol>> alloc] initWithCapacity:dataProviders.count];

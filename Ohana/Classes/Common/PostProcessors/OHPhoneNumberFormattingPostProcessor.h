@@ -38,10 +38,10 @@ typedef NS_OPTIONS (NSInteger, OHPhoneNumberFormat) {
 
 @interface OHPhoneNumberFormattingPostProcessor : NSObject <OHContactsPostProcessorProtocol>
 
-extern NSString *_Nonnull kOHFormattedPhoneNumberE164;          // Phone number in E164 format (NSString *)
-extern NSString *_Nonnull kOHFormattedPhoneNumberInternational; // Phone number in International format (NSString *)
-extern NSString *_Nonnull kOHFormattedPhoneNumberNational;      // Phone number in National format (NSString *)
-extern NSString *_Nonnull kOHFormattedPhoneNumberRFC3966;       // Phone number in RFC3966 format (NSString *)
+extern NSString *kOHFormattedPhoneNumberE164;          // Phone number in E164 format (NSString *)
+extern NSString *kOHFormattedPhoneNumberInternational; // Phone number in International format (NSString *)
+extern NSString *kOHFormattedPhoneNumberNational;      // Phone number in National format (NSString *)
+extern NSString *kOHFormattedPhoneNumberRFC3966;       // Phone number in RFC3966 format (NSString *)
 
 /**
  *  Bit mask of formats to use

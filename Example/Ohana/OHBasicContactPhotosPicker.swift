@@ -47,7 +47,9 @@ class OHBasicContactPhotosPicker : UITableViewController, OHCNContactsDataProvid
         dataSource = OHContactsDataSource(dataProviders: NSOrderedSet(objects: dataProvider), postProcessors: NSOrderedSet(object: alphabeticalSortProcessor))
 
         dataSource.onContactsDataSourceReadySignal.addObserver(self, callback: { [weak self] (observer) in
-            self?.tableView?.reloadData()
+            DispatchQueue.main.async {
+                self?.tableView?.reloadData()
+            }
         })
 
         dataSource.loadContacts()
