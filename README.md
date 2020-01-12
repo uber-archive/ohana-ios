@@ -1,4 +1,4 @@
-![Ohana](https://s3.amazonaws.com/uploads.hipchat.com/17604/3775258/b8P910panT41Y7a/ohana.png)
+![Ohana](https://raw.githubusercontent.com/uber/ohana-ios/master/Example/Ohana/Images.xcassets/Logo.png)
 
 [![CI Status](http://img.shields.io/travis/uber/ohana-ios.svg?style=flat)](https://travis-ci.org/uber/ohana-ios)
 [![Version](https://img.shields.io/cocoapods/v/Ohana.svg?style=flat)](http://cocoapods.org/pods/Ohana)
