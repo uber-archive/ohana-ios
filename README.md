@@ -24,7 +24,7 @@ Ohana is a framework for working with a user's contacts on the iOS platform. It 
 To integrate Ohana into your project using [CocoaPods](http://cocoapods.org), add the following line to your Podfile:
 
 ```ruby
-pod 'Ohana', '~> 1.3'
+ pod 'Ohana', '~> 2.0'
 ```
 
 #### Carthage
